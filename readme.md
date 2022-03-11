@@ -1,4 +1,4 @@
-<h1 align="center">Hi👋 i'm Juan Diego Londoño (Juandy) </h1>
+<h1 align="center">Hi👋 I'm Juan Diego Londoño (Juandy) </h1>
 <p><em>I'm a Colombian 20 years old undergraduate student at the <a href="https://udemedellin.edu.co">University of Medellin</a> in the career of Systems Engineering. 😊
 
 I'm a software developer, with very good logic programming always wishing for learning, highly capable self-study and good communicative ability.</em></p>
