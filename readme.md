@@ -4,7 +4,7 @@
 I'm a software developer, with very good logic programming always wishing for learning, highly capable self-study and good communicative ability.</em></p>
 
 
-<img align="right" alt="GIF" src="https://github.com/abhisheknaiidu/abhisheknaiidu/blob/master/code.gif?raw=true" width="200" height="319" />
+<img align="right" alt="GIF" src="https://github.com/abhisheknaiidu/abhisheknaiidu/blob/master/code.gif?raw=true" width="250" height="300" />
 
 
 ```javascript
@@ -17,8 +17,8 @@ const aboutMe = {
          css: ["Bootstrap", "Material Design"]
       },
       databases: ["MongoDB", "mySQL", "SQLServer", "Postgresql", "MySQL", "Sqlite"],
-      mobile: ["Android"]
-      Robotic Process Automation: ["UiPath"]
+      mobile: ["Android"],
+      RPA: ["UiPath"]
    },
    currentOccupation: ["Full-Time student"],
    challenge: "I'm working to be a full-stack developer",
