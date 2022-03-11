@@ -10,7 +10,7 @@ I'm a software developer, with very good logic programming always wishing for le
 ```javascript
 const aboutMe = {
    pronouns: "he" | "him",
-   code: [Javascript, Typescript, HTML, CSS, Python, Java, CSharp],
+   code: ["Javascript", "Typescript", "HTML", "CSS", "Python", "Java", "CSharp"],
    technologies: {
       frontEnd: {
          js: ["React"],
