@@ -62,7 +62,7 @@
        <img
          width="49%"
          height="30%"
-         src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,sqlite,firebase&perline=3" 
+         src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,firebase&perline=2" 
          align="left"/>
     </div>
     <div style="width:50%" class="column">
