@@ -24,7 +24,7 @@
 <div class="column-list">
     <div style="width:50%" class="column">
             <img
-              width="49%" height="300"
+              width="44%" height="300"
               src="https://skillicons.dev/icons?i=python,java,cs,md,js,ts,html,css&amp;perline=4" 
               align="left"
             />
