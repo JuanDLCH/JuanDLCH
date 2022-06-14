@@ -60,14 +60,13 @@
 <div class="column-list">
     <div style="width:50%" class="column">
        <img
-         width="49%"
-         height="30%"
+         width="49%" height="300"
          src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,firebase&perline=2" 
          align="left"/>
     </div>
     <div style="width:50%" class="column">
         <img
-         width="42%"
+         width="32%" height="300"
          src="https://media0.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif?cid=ecf05e47qes1x4a3fuk9omc6convfzydjethcgqmzo3d6jlz&amp;rid=giphy.gif&amp;ct=g"                        />
     </div>
 </div>
