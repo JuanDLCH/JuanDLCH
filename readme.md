@@ -42,10 +42,10 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 #### AI, agents & LLMs
 
 <p>
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock_64.svg" width="42" height="42" alt="Amazon Bedrock" title="Amazon Bedrock">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock-AgentCore_64.svg" width="42" height="42" alt="Amazon Bedrock AgentCore" title="Amazon Bedrock AgentCore">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Nova_64.svg" width="42" height="42" alt="Amazon Nova" title="Amazon Nova">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-SageMaker-AI_64.svg" width="42" height="42" alt="Amazon SageMaker AI" title="Amazon SageMaker AI">
+  <img src="./assets/aws/bedrock.svg" width="42" height="42" alt="Amazon Bedrock" title="Amazon Bedrock">
+  <img src="./assets/aws/agentcore.svg" width="42" height="42" alt="Amazon Bedrock AgentCore" title="Amazon Bedrock AgentCore">
+  <img src="./assets/aws/nova.svg" width="42" height="42" alt="Amazon Nova" title="Amazon Nova">
+  <img src="./assets/aws/sagemaker.svg" width="42" height="42" alt="Amazon SageMaker AI" title="Amazon SageMaker AI">
   <img src="./assets/icons/langgraph.svg" width="42" height="42" alt="LangGraph" title="LangGraph">
   <img src="./assets/icons/langchain.svg" width="42" height="42" alt="LangChain" title="LangChain">
   <img src="./assets/icons/modelcontextprotocol.svg" width="42" height="42" alt="Model Context Protocol" title="Model Context Protocol">
@@ -61,9 +61,9 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 <p>
   <img src="./assets/icons/deepgram.svg" width="42" height="42" alt="Deepgram" title="Deepgram">
   <img src="./assets/icons/elevenlabs.svg" width="42" height="42" alt="ElevenLabs" title="ElevenLabs">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Transcribe_64.svg" width="42" height="42" alt="Amazon Transcribe" title="Amazon Transcribe">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Textract_64.svg" width="42" height="42" alt="Amazon Textract" title="Amazon Textract">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Rekognition_64.svg" width="42" height="42" alt="Amazon Rekognition" title="Amazon Rekognition">
+  <img src="./assets/aws/transcribe.svg" width="42" height="42" alt="Amazon Transcribe" title="Amazon Transcribe">
+  <img src="./assets/aws/textract.svg" width="42" height="42" alt="Amazon Textract" title="Amazon Textract">
+  <img src="./assets/aws/rekognition.svg" width="42" height="42" alt="Amazon Rekognition" title="Amazon Rekognition">
 </p>
 
 <sub>Deepgram · ElevenLabs · Amazon Transcribe · Textract · Rekognition · OCR · STT/TTS pipelines · multimodal workflows</sub>
@@ -85,18 +85,18 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 
 <sub>React · Next.js · Tailwind CSS · Material UI · Ant Design · Angular · component libraries · dashboards · responsive interfaces. Earlier experience also includes Vue.</sub>
 
-#### Cloud, infrastructure & delivery
+#### Engineering tools & delivery
 
 <p><img src="https://skillicons.dev/icons?i=aws,docker,terraform,githubactions,git,linux&theme=light" alt="AWS, Docker, Terraform, GitHub Actions, Git and Linux" height="42"></p>
 
-<sub>AWS Lambda · API Gateway · SAM / IaC · ECS/Fargate · ECR · EventBridge · SQS · Step Functions · S3 · CloudWatch · Secrets Manager · Cognito · CI/CD</sub>
+<sub>AWS SAM · Infrastructure as Code · GitHub Actions · CI/CD · containers · Linux · observability · cloud operations</sub>
 
 #### Data & storage
 
 <p>
   <img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,supabase&theme=light" alt="PostgreSQL, Redis, MongoDB and Supabase" height="42">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-DynamoDB_64.svg" width="42" height="42" alt="Amazon DynamoDB" title="Amazon DynamoDB">
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Aurora_64.svg" width="42" height="42" alt="Amazon Aurora" title="Amazon Aurora">
+  <img src="./assets/aws/dynamodb.svg" width="42" height="42" alt="Amazon DynamoDB" title="Amazon DynamoDB">
+  <img src="./assets/aws/aurora.svg" width="42" height="42" alt="Amazon Aurora" title="Amazon Aurora">
 </p>
 
 <sub>PostgreSQL / Aurora Serverless · DynamoDB · Redis / Valkey · MongoDB · S3 · Redshift · Glue · DMS · SQL</sub>
@@ -123,6 +123,90 @@ I design and ship **AI-native applications** — agents that call tools, work ac
   <strong>Additional tooling:</strong> Voiceflow, low-code workflows, notebooks and rapid prototyping.
   <br><br>
 </details>
+
+### AWS Cloud Stack
+
+<sub>Services I've worked with across AI engineering, serverless applications, data platforms and cloud operations. All icons are stored in this repository.</sub>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>AI & Machine Learning</strong><br><br>
+      <img src="./assets/aws/bedrock.svg" width="39" height="39" alt="Amazon Bedrock" title="Amazon Bedrock">
+      <img src="./assets/aws/agentcore.svg" width="39" height="39" alt="Bedrock AgentCore" title="Bedrock AgentCore">
+      <img src="./assets/aws/nova.svg" width="39" height="39" alt="Amazon Nova" title="Amazon Nova">
+      <img src="./assets/aws/sagemaker.svg" width="39" height="39" alt="SageMaker AI" title="SageMaker AI">
+      <img src="./assets/aws/textract.svg" width="39" height="39" alt="Textract" title="Textract">
+      <img src="./assets/aws/rekognition.svg" width="39" height="39" alt="Rekognition" title="Rekognition">
+      <img src="./assets/aws/transcribe.svg" width="39" height="39" alt="Transcribe" title="Transcribe">
+      <br><sub>Amazon Bedrock · Bedrock AgentCore · Amazon Nova · SageMaker AI · Textract · Rekognition · Transcribe</sub>
+    </td>
+    <td width="50%" valign="top">
+      <strong>Compute & Containers</strong><br><br>
+      <img src="./assets/aws/lambda.svg" width="39" height="39" alt="AWS Lambda" title="AWS Lambda">
+      <img src="./assets/aws/ec2.svg" width="39" height="39" alt="Amazon EC2" title="Amazon EC2">
+      <img src="./assets/aws/ecs.svg" width="39" height="39" alt="Amazon ECS" title="Amazon ECS">
+      <img src="./assets/aws/fargate.svg" width="39" height="39" alt="AWS Fargate" title="AWS Fargate">
+      <img src="./assets/aws/ecr.svg" width="39" height="39" alt="Amazon ECR" title="Amazon ECR">
+      <br><sub>AWS Lambda · Amazon EC2 · Amazon ECS · AWS Fargate · Amazon ECR</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Networking & Web Delivery</strong><br><br>
+      <img src="./assets/aws/apigateway.svg" width="39" height="39" alt="API Gateway" title="API Gateway">
+      <img src="./assets/aws/cloudfront.svg" width="39" height="39" alt="CloudFront" title="CloudFront">
+      <img src="./assets/aws/waf.svg" width="39" height="39" alt="AWS WAF" title="AWS WAF">
+      <img src="./assets/aws/amplify.svg" width="39" height="39" alt="AWS Amplify" title="AWS Amplify">
+      <br><sub>API Gateway · CloudFront · AWS WAF · AWS Amplify</sub>
+    </td>
+    <td width="50%" valign="top">
+      <strong>Databases & Storage</strong><br><br>
+      <img src="./assets/aws/s3.svg" width="39" height="39" alt="Amazon S3" title="Amazon S3">
+      <img src="./assets/aws/dynamodb.svg" width="39" height="39" alt="DynamoDB" title="DynamoDB">
+      <img src="./assets/aws/rds.svg" width="39" height="39" alt="Amazon RDS" title="Amazon RDS">
+      <img src="./assets/aws/aurora.svg" width="39" height="39" alt="Aurora Serverless" title="Aurora Serverless">
+      <img src="./assets/aws/elasticache.svg" width="39" height="39" alt="ElastiCache / Valkey" title="ElastiCache / Valkey">
+      <br><sub>Amazon S3 · DynamoDB · Amazon RDS · Aurora Serverless · ElastiCache / Valkey</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Data, Analytics & Migration</strong><br><br>
+      <img src="./assets/aws/glue.svg" width="39" height="39" alt="AWS Glue" title="AWS Glue">
+      <img src="./assets/aws/redshift.svg" width="39" height="39" alt="Amazon Redshift" title="Amazon Redshift">
+      <img src="./assets/aws/dms.svg" width="39" height="39" alt="AWS DMS" title="AWS DMS">
+      <br><sub>AWS Glue · Amazon Redshift · AWS DMS</sub>
+    </td>
+    <td width="50%" valign="top">
+      <strong>Events, Workflows & Messaging</strong><br><br>
+      <img src="./assets/aws/eventbridge.svg" width="39" height="39" alt="EventBridge / Scheduler" title="EventBridge / Scheduler">
+      <img src="./assets/aws/sqs.svg" width="39" height="39" alt="Amazon SQS" title="Amazon SQS">
+      <img src="./assets/aws/stepfunctions.svg" width="39" height="39" alt="Step Functions" title="Step Functions">
+      <img src="./assets/aws/ses.svg" width="39" height="39" alt="Amazon SES" title="Amazon SES">
+      <img src="./assets/aws/pinpoint.svg" width="39" height="39" alt="Amazon Pinpoint" title="Amazon Pinpoint">
+      <br><sub>EventBridge / Scheduler · Amazon SQS · Step Functions · Amazon SES · Amazon Pinpoint</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Security & Identity</strong><br><br>
+      <img src="./assets/aws/cognito.svg" width="39" height="39" alt="Amazon Cognito" title="Amazon Cognito">
+      <img src="./assets/aws/iam.svg" width="39" height="39" alt="AWS IAM" title="AWS IAM">
+      <img src="./assets/aws/secretsmanager.svg" width="39" height="39" alt="Secrets Manager" title="Secrets Manager">
+      <img src="./assets/aws/ssm.svg" width="39" height="39" alt="Systems Manager / Parameter Store" title="Systems Manager / Parameter Store">
+      <br><sub>Amazon Cognito · AWS IAM · Secrets Manager · Systems Manager / Parameter Store</sub>
+    </td>
+    <td width="50%" valign="top">
+      <strong>Observability & Infrastructure</strong><br><br>
+      <img src="./assets/aws/cloudwatch.svg" width="39" height="39" alt="Amazon CloudWatch" title="Amazon CloudWatch">
+      <img src="./assets/aws/cloudformation.svg" width="39" height="39" alt="AWS CloudFormation" title="AWS CloudFormation">
+      <br><sub>Amazon CloudWatch · AWS CloudFormation</sub>
+    </td>
+  </tr>
+</table>
+
+<sub>Additional experience: AWS SAM, EventBridge Scheduler, Aurora PostgreSQL / Serverless, and Valkey Serverless. AWS Architecture Icons are provided by AWS.</sub>
 
 ### Selected engineering work
 
