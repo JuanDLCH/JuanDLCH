@@ -41,8 +41,12 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 
 #### AI, agents & LLMs
 
-<p><img src="https://skillicons.dev/icons?i=aws&theme=light" height="30" alt="AWS"></p>
-<sub><strong>Amazon Bedrock · Bedrock AgentCore · Amazon Nova · SageMaker</strong></sub>
+<p>
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock_64.svg" height="30" align="center" alt="Amazon Bedrock icon"> <strong>Amazon Bedrock</strong>
+  &nbsp; &nbsp;
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock-AgentCore_64.svg" height="30" align="center" alt="Amazon Bedrock AgentCore icon"> <strong>Bedrock AgentCore</strong>
+</p>
+<sub>Amazon Nova · SageMaker · AWS model inference & AI services</sub>
 
 <p>
   <img src="https://img.shields.io/badge/LangGraph-273444?style=flat-square&logo=langgraph&logoColor=white" alt="LangGraph">
@@ -104,6 +108,15 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 </p>
 
 <sub>Meta WhatsApp Business Platform / Cloud API · Twilio · Discord bots · HubSpot CRM · Google Drive APIs · webhook integrations · Selenium / UiPath / PyAutoGUI</sub>
+
+<details>
+  <summary><strong>Earlier & complementary experience</strong></summary>
+  <br>
+  <strong>Other languages & web:</strong> Java, C#, Angular, Vue, Bootstrap, HTML/CSS, JavaScript frontend tooling.<br>
+  <strong>Data science & automation:</strong> Pandas, NumPy, Matplotlib, Jupyter, Python scripting, UiPath, Selenium, PyAutoGUI.<br>
+  <strong>Additional tooling:</strong> Voiceflow, low-code workflows, notebooks and rapid prototyping.
+  <br><br>
+</details>
 
 ### Selected engineering work
 
