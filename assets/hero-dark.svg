@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<title id="title">Juan Diego Londoño — AI Engineer</title><desc id="desc">Engineering intelligence: connected AI model, API, tools and cloud architecture.</desc>
+<defs><linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#151f35"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9586fa"/><stop offset=".55" stop-color="#b38df8"/><stop offset="1" stop-color="#48dbc0"/></linearGradient><radialGradient id="halo"><stop stop-color="#8575ed" stop-opacity=".22"/><stop offset="1" stop-color="#8575ed" stop-opacity="0"/></radialGradient><clipPath id="clip"><rect width="1200" height="340" rx="19"/></clipPath></defs>
+<g clip-path="url(#clip)" font-family="Inter,Segoe UI,Arial,sans-serif">
+<rect width="1200" height="340" fill="url(#background)"/><rect x="1" y="1" width="1198" height="338" rx="18" stroke="#283653" stroke-width="2" fill="none"/><circle cx="980" cy="155" r="210" fill="url(#halo)"/>
+<g></g><path d="M31 71 V31 H74 M1125 308 h43 v-39" stroke="#283653" stroke-width="2" fill="none"/>
+<text x="64" y="61" fill="#38d7bb" font-size="15" font-weight="800" letter-spacing="2.2">JUAN DIEGO LONDOÑO / JUANDY</text>
+<text x="64" y="137" fill="#f3f7ff" font-size="61" font-weight="800" letter-spacing="-2.5">ENGINEERING</text>
+<text x="64" y="206" fill="url(#accent)" font-size="61" font-weight="800" letter-spacing="-2.5">INTELLIGENCE.</text>
+<text x="65" y="252" fill="#8fa2c4" font-size="19" font-weight="600">AI Engineer · Agentic Systems · Cloud-Native Software</text>
+<path d="M66 280 H712" stroke="#283653" stroke-width="2"/>
+<text x="66" y="307" fill="#8fa2c4" font-size="12.5" font-weight="800" letter-spacing="2">PYTHON / AWS / BEDROCK / MCP / LANGGRAPH</text>
+<g fill="none" stroke="#9080e7" stroke-width="2" opacity=".75"><path d="M897 93 C918 130 995 155 1000 153"/><path d="M902 110 C902 151 885 187 862 212"/><path d="M1053 174 C1098 209 1063 257 1029 270"/><path d="M944 236 Q976 264 1026 270"/></g>
+<g><rect x="835" y="58" width="139" height="39" rx="10" fill="#111b31" stroke="#314160"/><circle cx="851" cy="77.5" r="5.5" fill="#9586fa"/><text x="864" y="83" fill="#f3f7ff" font-size="12.5" font-weight="700" letter-spacing="1">MODEL</text></g>
+<g><rect x="986" y="121" width="156" height="39" rx="10" fill="#111b31" stroke="#314160"/><circle cx="1002" cy="140.5" r="5.5" fill="#47d9bd"/><text x="1015" y="146" fill="#f3f7ff" font-size="12.5" font-weight="700" letter-spacing="1">TOOLS / MCP</text></g>
+<g><rect x="804" y="201" width="121" height="39" rx="10" fill="#111b31" stroke="#314160"/><circle cx="820" cy="220.5" r="5.5" fill="#47d9bd"/><text x="833" y="226" fill="#f3f7ff" font-size="12.5" font-weight="700" letter-spacing="1">API</text></g>
+<g><rect x="1013" y="254" width="124" height="39" rx="10" fill="#111b31" stroke="#314160"/><circle cx="1029" cy="273.5" r="5.5" fill="#9586fa"/><text x="1042" y="279" fill="#f3f7ff" font-size="12.5" font-weight="700" letter-spacing="1">CLOUD</text></g>
+</g></svg>
