@@ -42,29 +42,31 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 #### AI, agents & LLMs
 
 <p>
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock_64.svg" height="30" align="center" alt="Amazon Bedrock icon"> <strong>Amazon Bedrock</strong>
-  &nbsp; &nbsp;
-  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock-AgentCore_64.svg" height="30" align="center" alt="Amazon Bedrock AgentCore icon"> <strong>Bedrock AgentCore</strong>
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock_64.svg" width="42" height="42" alt="Amazon Bedrock" title="Amazon Bedrock">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Bedrock-AgentCore_64.svg" width="42" height="42" alt="Amazon Bedrock AgentCore" title="Amazon Bedrock AgentCore">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Nova_64.svg" width="42" height="42" alt="Amazon Nova" title="Amazon Nova">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-SageMaker-AI_64.svg" width="42" height="42" alt="Amazon SageMaker AI" title="Amazon SageMaker AI">
+  <img src="./assets/icons/langgraph.svg" width="42" height="42" alt="LangGraph" title="LangGraph">
+  <img src="./assets/icons/langchain.svg" width="42" height="42" alt="LangChain" title="LangChain">
+  <img src="./assets/icons/modelcontextprotocol.svg" width="42" height="42" alt="Model Context Protocol" title="Model Context Protocol">
+  <img src="./assets/icons/anthropic.svg" width="42" height="42" alt="Anthropic Claude" title="Anthropic Claude">
 </p>
-<sub>Amazon Nova · SageMaker · AWS model inference & AI services</sub>
 
-<p>
-  <img src="https://img.shields.io/badge/LangGraph-273444?style=flat-square&logo=langgraph&logoColor=white" alt="LangGraph">
-  <img src="https://img.shields.io/badge/LangChain-273444?style=flat-square&logo=langchain&logoColor=white" alt="LangChain">
-  <img src="https://img.shields.io/badge/MCP-273444?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP">
-  <img src="https://img.shields.io/badge/Anthropic%20Claude-273444?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic Claude">
-</p>
+<sub>Amazon Bedrock · Bedrock AgentCore · Amazon Nova · SageMaker · LangGraph · LangChain · MCP · Claude</sub>
 
 <sub>Also: OpenAI API · LlamaIndex · agent/tool orchestration · RAG · embeddings · semantic search & reranking · model routing · evaluations & tracing</sub>
 
 #### Voice, vision & document intelligence
 
 <p>
-  <img src="https://img.shields.io/badge/Deepgram-273444?style=flat-square&logo=deepgram&logoColor=white" alt="Deepgram">
-  <img src="https://img.shields.io/badge/ElevenLabs-273444?style=flat-square&logo=elevenlabs&logoColor=white" alt="ElevenLabs">
+  <img src="./assets/icons/deepgram.svg" width="42" height="42" alt="Deepgram" title="Deepgram">
+  <img src="./assets/icons/elevenlabs.svg" width="42" height="42" alt="ElevenLabs" title="ElevenLabs">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Transcribe_64.svg" width="42" height="42" alt="Amazon Transcribe" title="Amazon Transcribe">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Textract_64.svg" width="42" height="42" alt="Amazon Textract" title="Amazon Textract">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Rekognition_64.svg" width="42" height="42" alt="Amazon Rekognition" title="Amazon Rekognition">
 </p>
 
-<sub>Amazon Transcribe · Textract · Rekognition · STT/TTS pipelines · OCR · document processing · multimodal workflows</sub>
+<sub>Deepgram · ElevenLabs · Amazon Transcribe · Textract · Rekognition · OCR · STT/TTS pipelines · multimodal workflows</sub>
 
 #### Languages, backend & APIs
 
@@ -74,15 +76,14 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 
 #### Frontend & UI
 
-<p><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,bootstrap&theme=light" alt="React, Next.js, Tailwind CSS, HTML5, CSS3 and Bootstrap" height="42"></p>
-
 <p>
-  <img src="https://img.shields.io/badge/Material%20UI-273444?style=flat-square&logo=mui&logoColor=white" alt="Material UI">
-  <img src="https://img.shields.io/badge/Ant%20Design-273444?style=flat-square&logo=antdesign&logoColor=white" alt="Ant Design">
-  <img src="https://img.shields.io/badge/Angular-273444?style=flat-square&logo=angular&logoColor=white" alt="Angular">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,bootstrap&theme=light" alt="React, Next.js, Tailwind CSS, HTML5, CSS3 and Bootstrap" height="42">
+  <img src="./assets/icons/mui.svg" width="42" height="42" alt="Material UI" title="Material UI">
+  <img src="./assets/icons/antdesign.svg" width="42" height="42" alt="Ant Design" title="Ant Design">
+  <img src="./assets/icons/angular.svg" width="42" height="42" alt="Angular" title="Angular">
 </p>
 
-<sub>React & Next.js applications · component libraries · dashboards · responsive interfaces. Earlier experience also includes Angular and Vue.</sub>
+<sub>React · Next.js · Tailwind CSS · Material UI · Ant Design · Angular · component libraries · dashboards · responsive interfaces. Earlier experience also includes Vue.</sub>
 
 #### Cloud, infrastructure & delivery
 
@@ -92,22 +93,27 @@ I design and ship **AI-native applications** — agents that call tools, work ac
 
 #### Data & storage
 
-<p><img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,supabase&theme=light" alt="PostgreSQL, Redis, MongoDB and Supabase" height="42"></p>
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,redis,mongodb,supabase&theme=light" alt="PostgreSQL, Redis, MongoDB and Supabase" height="42">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-DynamoDB_64.svg" width="42" height="42" alt="Amazon DynamoDB" title="Amazon DynamoDB">
+  <img src="https://awsfundamentals.com/assets/aws-icons/Arch_Amazon-Aurora_64.svg" width="42" height="42" alt="Amazon Aurora" title="Amazon Aurora">
+</p>
 
 <sub>PostgreSQL / Aurora Serverless · DynamoDB · Redis / Valkey · MongoDB · S3 · Redshift · Glue · DMS · SQL</sub>
 
 #### Integrations & automation
 
 <p>
-  <img src="https://img.shields.io/badge/Meta-273444?style=flat-square&logo=meta&logoColor=white" alt="Meta">
-  <img src="https://img.shields.io/badge/WhatsApp-273444?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  <img src="https://img.shields.io/badge/HubSpot-273444?style=flat-square&logo=hubspot&logoColor=white" alt="HubSpot">
-  <img src="https://img.shields.io/badge/Discord-273444?style=flat-square&logo=discord&logoColor=white" alt="Discord">
-  <img src="https://img.shields.io/badge/n8n-273444?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
-  <img src="https://img.shields.io/badge/Google%20APIs-273444?style=flat-square&logo=google&logoColor=white" alt="Google APIs">
+  <img src="./assets/icons/meta.svg" width="42" height="42" alt="Meta" title="Meta">
+  <img src="./assets/icons/whatsapp.svg" width="42" height="42" alt="WhatsApp" title="WhatsApp">
+  <img src="./assets/icons/hubspot.svg" width="42" height="42" alt="HubSpot" title="HubSpot">
+  <img src="./assets/icons/discord.svg" width="42" height="42" alt="Discord" title="Discord">
+  <img src="./assets/icons/n8n.svg" width="42" height="42" alt="n8n" title="n8n">
+  <img src="./assets/icons/google.svg" width="42" height="42" alt="Google APIs" title="Google APIs">
 </p>
 
-<sub>Meta WhatsApp Business Platform / Cloud API · Twilio · Discord bots · HubSpot CRM · Google Drive APIs · webhook integrations · Selenium / UiPath / PyAutoGUI</sub>
+<sub>Meta WhatsApp Business Platform / Cloud API · Twilio · Discord bots · HubSpot CRM · Google Drive APIs · n8n · webhook automation · Selenium / UiPath / PyAutoGUI</sub>
+
 
 <details>
   <summary><strong>Earlier & complementary experience</strong></summary>
