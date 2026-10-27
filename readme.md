@@ -1,77 +1,123 @@
-<!-- JuanDLCH · GitHub Profile README -->
+<!-- JuanDLCH · Clean Pro · GitHub Profile README -->
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-    <img src="./assets/hero-dark.svg" alt="Juan Diego Londoño — AI Engineer. Engineering intelligence: agentic systems and cloud-native software." width="100%">
+    <img src="./assets/hero-dark.svg" alt="Juan Diego Londoño — AI Engineer · Agentic AI · Cloud-Native Systems" width="100%">
   </picture>
 </div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/juandlch/">LinkedIn</a>
-  &nbsp; · &nbsp;
-  <a href="mailto:juandiego0329@gmail.com">Email</a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/JuanDLCH?tab=repositories">Repositories</a>
+  <a href="https://www.linkedin.com/in/juandlch/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:juandiego0329@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-353B48?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://github.com/JuanDLCH?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore%20code-353B48?style=flat-square&logo=github&logoColor=white" alt="Repositories"></a>
 </p>
 
 ### Hey, I'm Juandy. 👋
 
 I'm **Juan Diego Londoño**, an **AI Engineer & Software Engineer** based in Medellín, Colombia.
 
-I build **AI systems that do more than generate text** — agents that work with tools, interact with business APIs, maintain context, and carry out useful workflows. My foundation is in **backend engineering and AWS**, so I care as much about the infrastructure, security, and reliability around the model as I do about the model itself.
+I build **AI systems that do more than generate answers**: agents that use tools, connect to real services, manage state, and execute useful workflows. My foundation is in **backend engineering and AWS**, so I focus on the architecture, security, reliability, and developer experience surrounding the model — not just the model itself.
 
-> **My sweet spot:** turning LLM capabilities into dependable software that people can actually use.
+> **What drives me:** turning powerful AI capabilities into dependable, production-ready software.
 
-### What I engineer
+### What I build
 
-| Focus | What I build |
-| :--- | :--- |
-| **Agentic AI & orchestration** | Tool-using agents, multi-step workflows, **MCP** integrations, **LangGraph**, model routing, structured outputs, streaming, and human-in-the-loop approvals. |
-| **AI-backed applications** | **Amazon Bedrock** integrations, conversational experiences, context/session management, document processing, evaluation, and observable execution. |
-| **Cloud-native backend systems** | **Python/FastAPI** and **TypeScript**, serverless APIs, event-driven services, containers, secure integrations, and production workloads on **AWS**. |
-| **Engineering for production** | Authentication and authorization, persistence, logs and traces, automated testing, CI/CD, deployment, and operational troubleshooting. |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>🧠 Agentic AI</strong>
+      <br><br>
+      Tool-using agents, multi-step workflows, model orchestration, <strong>MCP</strong> integrations, structured outputs, and human-in-the-loop approvals.
+    </td>
+    <td width="50%" valign="top">
+      <strong>⚡ AI-powered applications</strong>
+      <br><br>
+      Conversational systems, streaming responses, document intelligence, session/context management, and business-facing AI integrations.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>☁️ Cloud-native engineering</strong>
+      <br><br>
+      Serverless APIs, event-driven services, containers, scalable data layers, and infrastructure built around <strong>AWS</strong>.
+    </td>
+    <td width="50%" valign="top">
+      <strong>🛠️ Production-grade systems</strong>
+      <br><br>
+      Authentication, secure tool execution, observability, automated testing, CI/CD, and operational troubleshooting.
+    </td>
+  </tr>
+</table>
 
-### My toolkit
+### Technology stack
 
-**AI & Agents**  
-`Amazon Bedrock` · `LangGraph` · `MCP` · `LLM tool calling` · `Claude / Nova` · `Agent orchestration` · `Evals`
+<sub>My core toolbox — grouped by what I actually use to ship software.</sub>
 
-**Backend & Integrations**  
-`Python` · `FastAPI` · `Pydantic` · `TypeScript` · `JavaScript` · `REST APIs` · `Webhooks` · `Discord` · `Twilio / WhatsApp` · `HubSpot`
+**AI & agent engineering**
 
-**Cloud & Infrastructure**  
-`AWS Lambda` · `API Gateway` · `ECS / Fargate` · `ECR` · `EventBridge` · `S3` · `CloudWatch` · `Secrets Manager` · `Cognito` · `Docker`
+<p>
+  <img src="https://img.shields.io/badge/Amazon%20Bedrock-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon Bedrock">
+  <img src="https://img.shields.io/badge/LangGraph-232F3E?style=flat-square" alt="LangGraph">
+  <img src="https://img.shields.io/badge/Model%20Context%20Protocol-232F3E?style=flat-square" alt="MCP">
+  <img src="https://img.shields.io/badge/Claude%20%2F%20Nova-232F3E?style=flat-square" alt="Claude and Nova">
+  <img src="https://img.shields.io/badge/Tool%20Calling-232F3E?style=flat-square" alt="Tool calling">
+  <img src="https://img.shields.io/badge/Evaluations-232F3E?style=flat-square" alt="Evaluations">
+</p>
 
-**Data, Automation & Delivery**  
-`DynamoDB` · `PostgreSQL / Aurora` · `Redis / Valkey` · `GitHub Actions` · `AWS SAM` · `Pytest` · `n8n`
+**Languages & backend**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,fastapi,ts,js,nodejs&theme=light" alt="Python, FastAPI, TypeScript, JavaScript and Node.js" height="43">
+</p>
+
+<sub>Python · FastAPI · Pydantic · TypeScript · JavaScript · REST APIs · Webhooks · streaming APIs</sub>
+
+**Cloud & platform**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=aws,docker,githubactions,git,bash,linux&theme=light" alt="AWS, Docker, GitHub Actions, Git, Bash and Linux" height="43">
+</p>
+
+<sub>Lambda · API Gateway · ECS/Fargate · ECR · EventBridge · S3 · CloudWatch · Secrets Manager · Cognito · AWS SAM</sub>
+
+**Data & integrations**
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgres,redis,dynamodb,supabase,discord&theme=light" alt="PostgreSQL, Redis, DynamoDB, Supabase and Discord" height="43">
+</p>
+
+<sub>PostgreSQL/Aurora · Redis/Valkey · DynamoDB · Discord · WhatsApp/Twilio · HubSpot · Google APIs · n8n</sub>
 
 ### Selected engineering work
 
-**→ AI agents connected to real business workflows**  
-Built assistants that call tools and external services instead of stopping at a generated answer. Designed around orchestration, permission boundaries, context, streaming feedback, and explicit approvals for sensitive actions.
+| Area | Problems I've worked on |
+| :--- | :--- |
+| **Business-connected AI agents** | Designing assistants that use tools and enterprise APIs, preserve conversational context, and request approval before sensitive actions. |
+| **Conversational & agent platforms** | Building agent-backed services with Python, FastAPI, LangGraph, streaming, authentication, persistent state, and AWS infrastructure. |
+| **Automation & integrations** | Connecting business systems through APIs, messaging interfaces, webhooks, and event-driven workflows, with tests and traceable execution. |
 
-**→ Cloud-backed conversational systems**  
-Developed AI-powered services with **FastAPI, LangGraph, and AWS** — including authenticated sessions, persistent state, low-latency response streams, monitoring, and deployment pipelines.
+<sub>Most of my recent professional work is in private repositories. I describe the engineering challenges without exposing confidential code or internal architecture.</sub>
 
-**→ Integrations, automation, and backend platforms**  
-Connected business systems through APIs, bots, webhooks, and event-driven components. I enjoy the part where a prototype becomes a maintainable service with tests, logs, and predictable behavior.
+### GitHub snapshot
 
-<sub>Most of my recent professional work lives in private repositories. These summaries intentionally focus on engineering problems and capabilities, not confidential implementation details.</sub>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=JuanDLCH&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=JuanDLCH&show_icons=true&include_all_commits=true&hide_border=true&theme=default">
+    <img src="https://github-stats-extended.vercel.app/api?username=JuanDLCH&show_icons=true&include_all_commits=true&hide_border=true&theme=default" alt="GitHub activity statistics for JuanDLCH" height="175">
+  </picture>
+</div>
 
-### How I think about building AI
-
-**Useful AI > impressive demos.** A model is only one component. The real engineering is deciding **what it can do, which tools it can trust, how actions are authorized, how state is managed, and how failures can be diagnosed**.
-
-Outside of the terminal, you'll probably find me tinkering with Linux or playing football as a goalkeeper. ⚽
+<p align="center"><sub>Public GitHub metrics are only a slice of my work; much of my recent engineering has happened in private organizations.</sub></p>
 
 ---
 
 <p align="center">
-  <strong>Let's build something useful.</strong><br>
-  <sub>Agentic AI · Backend Engineering · Cloud-Native Systems</sub><br><br>
-  <a href="https://www.linkedin.com/in/juandlch/">Connect on LinkedIn</a>
+  <strong>Useful AI over impressive demos.</strong><br>
+  <sub>Outside the terminal: Linux tinkering, automation experiments, and football — usually as a goalkeeper. ⚽</sub><br><br>
+  <a href="https://www.linkedin.com/in/juandlch/">Let's connect on LinkedIn</a>
   &nbsp; · &nbsp;
   <a href="mailto:juandiego0329@gmail.com">Get in touch</a>
 </p>
