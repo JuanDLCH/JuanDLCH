@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+<title id="t">Drive-thru voice AI architecture</title><desc id="d">The customer speaks; Deepgram streams speech to text; a Claude agent handles turn-taking, calls the order API, and answers through ElevenLabs voice. The customer can interrupt mid-sentence.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}
+.flow{stroke-dasharray:2 98;animation:flow 2.4s linear infinite}
+@keyframes flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+.march{animation:march 1s linear infinite}@keyframes march{to{stroke-dashoffset:-12}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.flow{display:none}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#151f35"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#314160"/></marker>
+<marker id="arrowD" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4d5e7f"/></marker>
+<clipPath id="clip"><rect width="1200" height="320" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="320" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="318" rx="15" stroke="#283653" stroke-width="2" fill="none"/>
+<path d="M140 128C140 80 220 62 318 62" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.00s" d="M140 128C140 80 220 62 318 62" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/><rect x="146.6" y="68" width="106.80000000000001" height="22" rx="11" fill="#151f35" stroke="#283653"/><text x="200" y="83.5" fill="#8fa2c4" font-size="12" font-weight="600" text-anchor="middle">audio stream</text>
+<path d="M522 62C600 62 650 90 650 116" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.37s" d="M522 62C600 62 650 90 650 116" pathLength="100" fill="none" stroke="#48dbc0" stroke-width="6" stroke-linecap="round"/>
+<path d="M748 140C820 130 860 62 904 62" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.74s" d="M748 140C820 130 860 62 904 62" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/><rect x="783.7" y="92" width="84.60000000000001" height="22" rx="11" fill="#151f35" stroke="#283653"/><text x="826" y="107.5" fill="#8fa2c4" font-size="12" font-weight="600" text-anchor="middle">tool call</text>
+<path d="M748 162C820 175 860 250 908 250" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.11s" d="M748 162C820 175 860 250 908 250" pathLength="100" fill="none" stroke="#48dbc0" stroke-width="6" stroke-linecap="round"/>
+<path d="M908 262C700 312 300 312 150 176" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.48s" d="M908 262C700 312 300 312 150 176" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/><rect x="470.3" y="280" width="99.4" height="22" rx="11" fill="#151f35" stroke="#283653"/><text x="520" y="295.5" fill="#8fa2c4" font-size="12" font-weight="600" text-anchor="middle">speaks back</text>
+<path d="M244 150H548" fill="none" stroke="#4d5e7f" stroke-width="2" stroke-dasharray="6 6" class="march" marker-end="url(#arrowD)"/><rect x="301.9" y="138" width="188.20000000000002" height="22" rx="11" fill="#151f35" stroke="#283653"/><text x="396" y="153.5" fill="#8fa2c4" font-size="12" font-weight="600" text-anchor="middle">interrupts mid-sentence</text>
+<g><rect x="40" y="128" width="200" height="44" rx="22" fill="#111b31" stroke="#48dbc0" stroke-width="1.5"/>
+<text x="140" y="155" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Customer speaks</text>
+</g>
+<g><rect x="325" y="34" width="190" height="56" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/>
+<text x="420" y="59" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Deepgram</text>
+<text x="420" y="78" fill="#8fa2c4" font-size="12.5" text-anchor="middle">streaming STT</text></g>
+<g><rect x="555" y="122" width="190" height="56" rx="10" fill="#111b31" stroke="#9586fa" stroke-width="2"/>
+<text x="650" y="147" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Claude agent</text>
+<text x="650" y="166" fill="#8fa2c4" font-size="12.5" text-anchor="middle">turn-taking</text></g>
+<g><rect x="910" y="40" width="200" height="44" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/><path d="M918 49Q1010 59 1102 49" fill="none" stroke="#314160" stroke-width="1.5"/>
+<text x="1010" y="70" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Order / POS API</text>
+</g>
+<g><rect x="915" y="222" width="190" height="56" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/>
+<text x="1010" y="247" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">ElevenLabs</text>
+<text x="1010" y="266" fill="#8fa2c4" font-size="12.5" text-anchor="middle">voice</text></g>
+</g>
+</svg>

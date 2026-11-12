@@ -29,6 +29,16 @@ const THEMES = {
   },
 };
 
+// The current chapter: shown in the terminal `whoami` and as the last timeline stop.
+// Keep it generic and true; it closes the story as wider scope, not as a rank.
+const NOW = {
+  whoami: 'AI Engineer',
+  year: '2026',
+  head: 'What’s next',
+  role: 'AI ENGINEER',
+  d: ['A new chapter starts soon.', 'More on that shortly.'],
+};
+
 const SANS = "Inter,'Segoe UI',Helvetica,Arial,sans-serif";
 const MONO = "ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace";
 
@@ -122,7 +132,7 @@ ${REDUCED('.flow,.g0,.g1,.g2{display:none}')}`;
 <text x="62" y="194" font-size="50" font-weight="800" letter-spacing="-1.8">${words.map((x, i) => `<tspan class="w${i}" fill="${x.color}">${x.w}</tspan>`).join(' ')}</text>
 <text x="64" y="236" fill="${c.muted}" font-size="23" font-weight="600">— inside real software, not just demos.</text>
 <path d="M66 266H640" stroke="${c.border}" stroke-width="2"/>
-<text x="66" y="300" fill="${c.muted}" font-size="12.5" font-weight="800" letter-spacing="2">LEAD AI ENGINEER · AGENTS · REALTIME VOICE · DOCUMENT AI · AWS</text>
+<text x="66" y="300" fill="${c.muted}" font-size="12.5" font-weight="800" letter-spacing="2">AI ENGINEER · AGENTS · REALTIME VOICE · DOCUMENT AI · AWS</text>
 
 <g fill="none" stroke-width="2" stroke-linecap="round">
 ${edges.map((d) => `<path d="${d}" stroke="${c.cardStroke}"/>`).join('\n')}
@@ -159,7 +169,7 @@ function terminal(c) {
   const CPS = 0.05; // seconds per typed character
   const items = [
     { k: 'cmd', t: 'whoami' },
-    { k: 'out', t: [['juandy', c.text], [' — Lead AI Engineer · Medellín, Colombia · ', c.muted], ['6.24°N 75.58°W', c.teal]] },
+    { k: 'out', t: [['juandy', c.text], [` — ${NOW.whoami} · Medellín, Colombia · `, c.muted], ['6.24°N 75.58°W', c.teal]] },
     { k: 'cmd', t: 'cat principles.txt' },
     { k: 'out', t: [['→ ', c.violet], ['architecture before implementation', c.muted]] },
     { k: 'out', t: [['→ ', c.violet], ['every AI feature ships with a latency, cost & failure budget', c.muted]] },
@@ -167,7 +177,7 @@ function terminal(c) {
     { k: 'cmd', t: 'claude "review this agent before it ships"', note: '  # every PR still gets human eyes' },
     { k: 'out', t: [['✓ ', c.green], ['3 suggestions · 0 surprises in prod ', c.muted], ['(that’s the goal, anyway)', c.faint]] },
     { k: 'cmd', t: 'uptime --off-the-clock' },
-    { k: 'out', t: [['goalkeeper', c.amber], [' (yes, I dive) · ', c.muted], ['linux tinkerer', c.teal], [' · automation experiments', c.muted]] },
+    { k: 'out', t: [['linux tinkerer', c.teal], [' · ', c.muted], ['automation experiments', c.amber], [' · ', c.muted], ['ES / EN', c.violet]] },
   ];
   const X = 44, Y0 = 96, LH = 33, FS = 20, CW = FS * 0.62;
   let t = 0.6;
@@ -233,7 +243,7 @@ ${lines.join('\n')}
   return svg({
     w: 1200, h: H,
     title: 'whoami — an animated terminal',
-    desc: 'A terminal types out who Juandy is: Lead AI Engineer in Medellín, his engineering principles, Claude Code as his main tool, and that he is a goalkeeper and Linux tinkerer off the clock.',
+    desc: 'A terminal types out who Juandy is: an AI Engineer in Medellín, his engineering principles, Claude Code as his main tool, and that off the clock he is a Linux tinkerer who runs automation experiments.',
     css: css.join('\n'), body,
   });
 }
@@ -305,7 +315,7 @@ function labChat(c) {
   const rows = steps.map((s, i) => {
     const y = 210 + i * 26;
     const done = s.t0 + 1.0;
-    css.push(`.sp${i}{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite,sp${i} ${T}s infinite}`);
+    css.push(`.sp${i}{transform-box:view-box;transform-origin:46px ${y - 5}px;animation:spin .8s linear infinite,sp${i} ${T}s infinite}`);
     css.push(`@keyframes sp${i}{0%,${pct(s.t0, T)}{opacity:0}${pct(s.t0 + 0.01, T)},${pct(done, T)}{opacity:1}${pct(done + 0.01, T)},100%{opacity:0}}`);
     css.push(`.ok${i}{animation:ok${i} ${T}s infinite}@keyframes ok${i}{0%,${pct(done, T)}{opacity:0}${pct(done + 0.15, T)},${pct(T - 0.5, T)}{opacity:1}${pct(T - 0.2, T)},100%{opacity:0}}`);
     css.push(`.row${i}{animation:row${i} ${T}s infinite}@keyframes row${i}{0%,${pct(s.t0, T)}{opacity:.25}${pct(s.t0 + 0.2, T)},${pct(T - 0.5, T)}{opacity:1}${pct(T - 0.2, T)},100%{opacity:.25}}`);
@@ -328,74 +338,74 @@ function labChat(c) {
 
 /* -------------------------------------------------------------- timeline */
 function timeline(c) {
-  const W = 1200, H = 240, Y = 92;
+  const W = 1200, H = 250, Y = 88;
+  // Big line = what was being built; small caps = role · company (no rank ladder, start years only).
   const stops = [
-    { x: 150, year: '2022', role: 'Full Stack', d: ['Stellion Tech · two ERP', 'systems, end to end'] },
-    { x: 450, year: '2023', role: 'Cloud & Backend', d: ['Trade EC / TRD Global', 'APIs, integrations, data'] },
-    { x: 750, year: '2024', role: 'AI Engineering', d: ['Agents, document search,', 'OCR and voice in products'] },
-    { x: 1050, year: '2024 – NOW', role: 'Lead AI Engineer', d: ['Team lead · AI consulting', 'AWS architecture'] },
-  ];
+    { year: '2022', head: 'Software that runs a business', role: 'FULL STACK · STELLION TECH', d: ['Two ERP systems,', 'end to end'] },
+    { year: '2023', head: 'Systems that talk to each other', role: 'FULL STACK · TRADE EC', d: ['APIs, integrations', 'and data on AWS'] },
+    { year: '2024', head: 'AI that ships to production', role: 'LEAD AI ENGINEER · TRADE EC', d: ['Led the team: agents, voice,', 'document AI, AWS architecture'] },
+    NOW,
+  ].map((s, i) => ({ ...s, x: 150 + i * 300 }));
+  const lastX = stops[stops.length - 1].x;
   const css = [`text{font-family:${SANS}}.mono{font-family:${MONO}}`,
     `.draw{stroke-dasharray:100;animation:draw 2.6s cubic-bezier(.6,.1,.3,1) both}`,
     `@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}`,
     `.ring{transform-box:fill-box;transform-origin:center;animation:ring 2s ease-out 2.6s infinite both}`,
     `@keyframes ring{0%{transform:scale(.6);opacity:.8}100%{transform:scale(2.4);opacity:0}}`];
   const body = stops.map((s, i) => {
-    const delay = (0.15 + ((s.x - 150) / 900) * 2.3).toFixed(2);
+    const delay = (0.15 + ((s.x - 150) / (lastX - 150)) * 2.3).toFixed(2);
     css.push(`.s${i}{animation:pop .5s ease-out ${delay}s both}`);
     const last = i === stops.length - 1;
     return `<g class="s${i}">
 ${last ? `<circle class="ring" cx="${s.x}" cy="${Y}" r="11" fill="none" stroke="${c.teal}" stroke-width="2"/>` : ''}
 <circle cx="${s.x}" cy="${Y}" r="${last ? 10 : 8}" fill="${last ? c.teal : c.card}" stroke="${last ? c.teal : c.violet}" stroke-width="3"/>
 <text x="${s.x}" y="${Y - 32}" fill="${last ? c.teal : c.violet}" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">${s.year}</text>
-<text x="${s.x}" y="${Y + 48}" fill="${c.text}" font-size="22" font-weight="800" text-anchor="middle">${esc(s.role)}</text>
-${s.d.map((l, j) => `<text x="${s.x}" y="${Y + 76 + j * 22}" fill="${c.muted}" font-size="16" text-anchor="middle">${esc(l)}</text>`).join('\n')}
+<text x="${s.x}" y="${Y + 46}" fill="${c.text}" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">${esc(s.head)}</text>
+<text x="${s.x}" y="${Y + 72}" fill="${last ? c.teal : c.violet}" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">${esc(s.role)}</text>
+${s.d.map((l, j) => `<text x="${s.x}" y="${Y + 100 + j * 21}" fill="${c.muted}" font-size="14.5" text-anchor="middle">${esc(l)}</text>`).join('\n')}
 </g>`;
   }).join('\n');
   css.push(`@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}`);
   css.push(REDUCED());
   return svg({
     w: W, h: H,
-    title: 'Career timeline 2022 – now',
-    desc: '2022 Full Stack at Stellion Tech; 2023 Cloud & Backend at Trade EC / TRD Global; 2024 AI Engineering; 2024 to now Lead AI Engineer.',
+    title: 'Career timeline, 2022 to today',
+    desc: stops.map((s) => `${s.year}: ${s.head} (${s.role.toLowerCase()})`).join('; '),
     css: css.join('\n'),
-    body: `<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="1050" y2="0"><stop stop-color="${c.violet}"/><stop offset=".55" stop-color="${c.lilac}"/><stop offset="1" stop-color="${c.teal}"/></linearGradient></defs>
-<path d="M60 ${Y}H1140" stroke="${c.border}" stroke-width="3" stroke-linecap="round"/>
-<path class="draw" d="M60 ${Y}H1050" pathLength="100" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
-<path d="M1062 ${Y}H1140" stroke="${c.teal}" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
+    body: `<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="${lastX}" y2="0"><stop stop-color="${c.violet}"/><stop offset=".55" stop-color="${c.lilac}"/><stop offset="1" stop-color="${c.teal}"/></linearGradient></defs>
+<path d="M40 ${Y}H1160" stroke="${c.border}" stroke-width="3" stroke-linecap="round"/>
+<path class="draw" d="M40 ${Y}H${lastX}" pathLength="100" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+<path d="M${lastX + 14} ${Y}H1170" stroke="${c.teal}" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
 ${body}`,
   });
 }
 
 /* ---------------------------------------------------------------- footer */
 function footer(c) {
-  const T = 4.2;
-  const W = 1200, H = 210;
-  // goal frame on the right; ball flies in from the left, glove dives and catches it
-  const net = [];
-  for (let x = 860; x <= 1150; x += 18) net.push(`M${x} 40V182`);
-  for (let y = 58; y <= 182; y += 18) net.push(`M852 ${y}H1158`);
-  const css = `text{font-family:${SANS}}.mono{font-family:${MONO}}
-.ball{animation:ball ${T}s cubic-bezier(.3,.6,.4,1) infinite}
-@keyframes ball{0%{transform:translate(0,0);opacity:0}6%{opacity:1}45%{transform:translate(330px,-70px)}55%,82%{transform:translate(372px,-58px);opacity:1}90%,100%{transform:translate(372px,-58px);opacity:0}}
-.spin{transform-box:fill-box;transform-origin:center;animation:spin ${T}s linear infinite}
-@keyframes spin{0%{transform:rotate(0)}55%,100%{transform:rotate(540deg)}}
-.glove{animation:glove ${T}s ease-in-out infinite}
-@keyframes glove{0%,30%{transform:translate(0,0) rotate(0)}52%,80%{transform:translate(-22px,-14px) rotate(-12deg)}95%,100%{transform:translate(0,0) rotate(0)}}
-.save{transform-box:fill-box;transform-origin:center;animation:save ${T}s ease-out infinite}
-@keyframes save{0%,54%{opacity:0;transform:scale(.6)}60%{opacity:1;transform:scale(1.12)}64%,82%{opacity:1;transform:scale(1)}90%,100%{opacity:0;transform:scale(1)}}
-${REDUCED('.ball{transform:translate(372px,-58px)}.glove{transform:translate(-22px,-14px) rotate(-12deg)}')}`;
-  const glove = `<g class="glove" style="transform-origin:1030px 130px">
-<g transform="translate(1030 120)" stroke="${c.ballInk}" stroke-opacity=".25" stroke-width="1.5">
-<rect x="-29" y="-48" width="13" height="44" rx="6.5" fill="${c.violet}"/>
-<rect x="-14" y="-56" width="13" height="52" rx="6.5" fill="${c.violet}"/>
-<rect x="1" y="-54" width="13" height="50" rx="6.5" fill="${c.violet}"/>
-<rect x="16" y="-44" width="13" height="40" rx="6.5" fill="${c.violet}"/>
-<rect x="-30" y="-14" width="60" height="50" rx="16" fill="${c.violet}"/>
-<rect x="-52" y="-6" width="15" height="38" rx="7.5" fill="${c.lilac}" transform="rotate(-38 -44 13)"/>
-<rect x="-26" y="34" width="52" height="16" rx="5" fill="${c.teal}"/>
-<path d="M-18 8h36" stroke="${c.card}" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
-</g></g>`;
+  // "Useful AI over impressive demos": a change travels demo → evals → review → prod
+  const T = 5.5;
+  const W = 1200, H = 210, Y = 96;
+  const stages = ['demo', 'evals', 'review', 'prod'].map((label, i) => ({ label, x: 690 + i * 145 }));
+  const t0 = 0.4, hop = 0.9; // packet reaches stage i at t0 + i*hop
+  const css = [`text{font-family:${SANS}}.mono{font-family:${MONO}}`,
+    `.pk{animation:pk ${T}s linear infinite}`,
+    `@keyframes pk{0%,${pct(t0, T)}{transform:translateX(0);opacity:1}${pct(t0 + 3 * hop, T)}{transform:translateX(${3 * 145}px);opacity:1}${pct(t0 + 3 * hop + 0.3, T)},100%{transform:translateX(${3 * 145}px);opacity:0}}`,
+    `.ship{transform-box:fill-box;transform-origin:center;animation:ship ${T}s ease-out infinite}`,
+    `@keyframes ship{0%,${pct(t0 + 3 * hop, T)}{opacity:0;transform:scale(.6)}${pct(t0 + 3 * hop + 0.25, T)}{opacity:1;transform:scale(1.1)}${pct(t0 + 3 * hop + 0.45, T)},${pct(T - 0.5, T)}{opacity:1;transform:scale(1)}${pct(T - 0.2, T)},100%{opacity:0}}`,
+    `.ring{transform-box:fill-box;transform-origin:center;animation:ring 1.6s ease-out infinite}`,
+    `@keyframes ring{0%{transform:scale(.7);opacity:.8}100%{transform:scale(2.2);opacity:0}}`];
+  const nodes = stages.map((s, i) => {
+    const at = t0 + i * hop;
+    css.push(`.ok${i}{animation:ok${i} ${T}s infinite}@keyframes ok${i}{0%,${pct(at, T)}{opacity:0}${pct(at + 0.12, T)},${pct(T - 0.5, T)}{opacity:1}${pct(T - 0.2, T)},100%{opacity:0}}`);
+    const last = i === stages.length - 1;
+    return `<g>
+${last ? `<circle class="ring ok${i}" cx="${s.x}" cy="${Y}" r="16" fill="none" stroke="${c.teal}" stroke-width="2"/>` : ''}
+<circle cx="${s.x}" cy="${Y}" r="16" fill="${c.card}" stroke="${c.cardStroke}" stroke-width="2"/>
+<g class="ok${i}"><circle cx="${s.x}" cy="${Y}" r="16" fill="${last ? c.teal : c.violet}"/><path d="M${s.x - 6} ${Y}l4 4 8-9" fill="none" stroke="${c.card}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="${s.x}" y="${Y + 42}" fill="${last ? c.teal : c.muted}" font-size="14" font-weight="700" text-anchor="middle" class="mono">${s.label}</text>
+</g>`;
+  }).join('\n');
+  css.push(REDUCED('.pk{display:none}'));
   const body = `<defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${c.bg1}"/><stop offset="1" stop-color="${c.bg2}"/></linearGradient>
 <clipPath id="clip"><rect width="${W}" height="${H}" rx="18"/></clipPath>
@@ -404,25 +414,169 @@ ${REDUCED('.ball{transform:translate(372px,-58px)}.glove{transform:translate(-22
 <rect width="${W}" height="${H}" fill="url(#bg)"/>
 <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="17" stroke="${c.border}" stroke-width="2" fill="none"/>
 <text x="56" y="82" fill="${c.text}" font-size="34" font-weight="800" letter-spacing="-1">Useful AI over impressive demos.</text>
-<text x="58" y="118" fill="${c.muted}" font-size="18">Off the clock: goalkeeper, Linux tinkerer, automation experiments.</text>
+<text x="58" y="118" fill="${c.muted}" font-size="18">A demo is step one. Evals, review and production are the job.</text>
 <text x="58" y="160" fill="${c.faint}" font-size="13" letter-spacing="1" class="mono">MEDELLÍN, CO · 6.24°N 75.58°W · ES / EN</text>
-<path d="${net.join('')}" stroke="${c.border}" stroke-width="1" opacity=".8"/>
-<path d="M852 184V40H1158V184" fill="none" stroke="${c.muted}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M600 186H1180" stroke="${c.border}" stroke-width="2"/>
-${glove}
-<g class="ball"><g class="spin"><circle cx="640" cy="160" r="17" fill="${c.ball}" stroke="${c.ballInk}" stroke-opacity=".35" stroke-width="1.5"/>
-<text x="640" y="165" fill="${c.violet}" font-size="14" font-weight="800" text-anchor="middle" class="mono">{ }</text></g></g>
-<g class="save"><text x="928" y="30" fill="${c.amber}" font-size="18" font-weight="900" letter-spacing="2" text-anchor="middle" transform="rotate(-6 928 30)">SAVED!</text></g>
+<path d="M${stages[0].x} ${Y}H${stages[3].x}" stroke="${c.border}" stroke-width="3" stroke-linecap="round"/>
+<circle class="pk" cx="${stages[0].x}" cy="${Y}" r="6" fill="${c.lilac}"/>
+${nodes}
+<g class="ship"><rect x="${stages[3].x - 52}" y="${Y - 58}" width="104" height="26" rx="13" fill="${c.teal}"/>
+<text x="${stages[3].x}" y="${Y - 40}" fill="${c.card}" font-size="12.5" font-weight="900" letter-spacing="2" text-anchor="middle">SHIPPED</text></g>
 </g>`;
   return svg({
     w: W, h: H,
     title: 'Useful AI over impressive demos',
-    desc: 'Footer: a goalkeeper glove dives to catch a curly-brace ball. Off the clock Juandy is a goalkeeper, Linux tinkerer and automation experimenter, based in Medellín.',
-    css, body,
+    desc: 'Footer: a change travels from demo to evals to review to production, where it is marked shipped. Based in Medellín, Colombia.',
+    css: css.join('\n'), body,
   });
 }
 
-const BUILDERS = { hero, terminal, 'lab-voice': labVoice, 'lab-chat': labChat, timeline, footer };
+/* ------------------------------------------------------- case-file flows */
+// Small architecture diagrams for the "What I've shipped" case files. They are
+// images rather than Mermaid because GitHub's Mermaid renderer breaks inside
+// collapsed <details> (spinners that never finish, zero-size diagrams).
+// Node kinds: io (pill), step (card), agent (violet card), db (cylinder).
+function flow({ h, nodes, edges, title, desc }) {
+  return (c) => {
+    const W = 1200;
+    const byId = Object.fromEntries(nodes.map((n) => [n.id, { w: 190, h: n.sub ? 56 : 44, ...n }]));
+    const css = [`text{font-family:${SANS}}`,
+      `.flow{stroke-dasharray:2 98;animation:flow 2.4s linear infinite}`,
+      `@keyframes flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}`,
+      `.march{animation:march 1s linear infinite}@keyframes march{to{stroke-dashoffset:-12}}`,
+      REDUCED('.flow{display:none}')];
+    const edgeSvg = edges.map((e, i) => {
+      const dashed = e.dashed ? ' stroke-dasharray="6 6" class="march"' : '';
+      const base = `<path d="${e.d}" fill="none" stroke="${e.dashed ? c.faint : c.cardStroke}" stroke-width="2"${dashed} marker-end="url(#arrow${e.dashed ? 'D' : ''})"/>`;
+      const pkt = e.dashed ? '' : `<path class="flow" style="animation-delay:-${((i * 0.37) % 2.4).toFixed(2)}s" d="${e.d}" pathLength="100" fill="none" stroke="${i % 2 ? c.teal : c.violet}" stroke-width="6" stroke-linecap="round"/>`;
+      const label = e.label ? (() => {
+        const [lx, ly] = e.at; const lw = e.label.length * 7.4 + 18;
+        return `<rect x="${lx - lw / 2}" y="${ly - 12}" width="${lw}" height="22" rx="11" fill="${c.bg2}" stroke="${c.border}"/><text x="${lx}" y="${ly + 3.5}" fill="${c.muted}" font-size="12" font-weight="600" text-anchor="middle">${esc(e.label)}</text>`;
+      })() : '';
+      return base + pkt + label;
+    }).join('\n');
+    const nodeSvg = Object.values(byId).map((n) => {
+      const x = n.x - n.w / 2, y = n.y - n.h / 2;
+      const stroke = n.kind === 'agent' ? c.violet : n.kind === 'io' ? c.teal : c.cardStroke;
+      const rx = n.kind === 'io' ? n.h / 2 : 10;
+      const shape = n.kind === 'db'
+        ? `<rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="10" fill="${c.card}" stroke="${stroke}" stroke-width="1.5"/><path d="M${x + 8} ${y + 9}Q${n.x} ${y + 19} ${x + n.w - 8} ${y + 9}" fill="none" stroke="${stroke}" stroke-width="1.5"/>`
+        : `<rect x="${x}" y="${y}" width="${n.w}" height="${n.h}" rx="${rx}" fill="${c.card}" stroke="${stroke}" stroke-width="${n.kind === 'agent' ? 2 : 1.5}"/>`;
+      const ty = n.sub ? n.y - 3 : n.y + 5;
+      return `<g>${shape}
+<text x="${n.x}" y="${ty + (n.kind === 'db' ? 3 : 0)}" fill="${c.text}" font-size="15" font-weight="700" text-anchor="middle">${esc(n.label)}</text>
+${n.sub ? `<text x="${n.x}" y="${n.y + 16}" fill="${c.muted}" font-size="12.5" text-anchor="middle">${esc(n.sub)}</text>` : ''}</g>`;
+    }).join('\n');
+    const body = `<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${c.bg1}"/><stop offset="1" stop-color="${c.bg2}"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${c.cardStroke}"/></marker>
+<marker id="arrowD" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${c.faint}"/></marker>
+<clipPath id="clip"><rect width="${W}" height="${h}" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="${W}" height="${h}" fill="url(#bg)"/>
+<rect x="1" y="1" width="${W - 2}" height="${h - 2}" rx="15" stroke="${c.border}" stroke-width="2" fill="none"/>
+${edgeSvg}
+${nodeSvg}
+</g>`;
+    return svg({ w: W, h, title, desc, css: css.join('\n'), body });
+  };
+}
+
+const caseDriveThru = flow({
+  h: 320,
+  title: 'Drive-thru voice AI architecture',
+  desc: 'The customer speaks; Deepgram streams speech to text; a Claude agent handles turn-taking, calls the order API, and answers through ElevenLabs voice. The customer can interrupt mid-sentence.',
+  nodes: [
+    { id: 'c', x: 140, y: 150, label: 'Customer speaks', kind: 'io', w: 200 },
+    { id: 'stt', x: 420, y: 62, label: 'Deepgram', sub: 'streaming STT' },
+    { id: 'a', x: 650, y: 150, label: 'Claude agent', sub: 'turn-taking', kind: 'agent' },
+    { id: 'pos', x: 1010, y: 62, label: 'Order / POS API', kind: 'db', w: 200 },
+    { id: 'tts', x: 1010, y: 250, label: 'ElevenLabs', sub: 'voice' },
+  ],
+  edges: [
+    { d: 'M140 128C140 80 220 62 318 62', label: 'audio stream', at: [200, 80] },
+    { d: 'M522 62C600 62 650 90 650 116' },
+    { d: 'M748 140C820 130 860 62 904 62', label: 'tool call', at: [826, 104] },
+    { d: 'M748 162C820 175 860 250 908 250' },
+    { d: 'M908 262C700 312 300 312 150 176', label: 'speaks back', at: [520, 292] },
+    { d: 'M244 150H548', dashed: true, label: 'interrupts mid-sentence', at: [396, 150] },
+  ],
+});
+
+const caseWhatsApp = flow({
+  h: 320,
+  title: 'Insurance assistant on WhatsApp',
+  desc: 'A WhatsApp user writes; Meta WhatsApp Cloud API sends a webhook to the conversation flows, which handle policy lookups, coverage checks and claims against the insurer systems, then reply.',
+  nodes: [
+    { id: 'u', x: 115, y: 150, label: 'WhatsApp user', kind: 'io', w: 170 },
+    { id: 'm', x: 345, y: 150, label: 'Meta WhatsApp', sub: 'Cloud API' },
+    { id: 'r', x: 590, y: 150, label: 'Conversation', sub: 'flows', kind: 'agent', w: 180 },
+    { id: 'p', x: 840, y: 62, label: 'Policy lookup', w: 180 },
+    { id: 'cv', x: 840, y: 150, label: 'Coverage check', w: 180 },
+    { id: 'cl', x: 840, y: 238, label: 'Claims', w: 180 },
+    { id: 'i', x: 1075, y: 150, label: 'Insurer systems', kind: 'db', w: 190 },
+  ],
+  edges: [
+    { d: 'M200 150H248' },
+    { d: 'M442 142H498', label: 'webhook', at: [470, 118] },
+    { d: 'M680 140C710 120 720 62 748 62' },
+    { d: 'M682 150H748' },
+    { d: 'M680 160C710 180 720 238 748 238' },
+    { d: 'M932 62C960 62 975 110 978 140' },
+    { d: 'M932 150H978' },
+    { d: 'M932 238C960 238 975 190 978 160' },
+    { d: 'M560 178C520 240 400 240 360 180', dashed: true, label: 'reply', at: [460, 226] },
+  ],
+});
+
+const caseClassEval = flow({
+  h: 170,
+  title: 'Automated class evaluation pipeline',
+  desc: 'A class recording goes to Amazon Transcribe, Step Functions orchestrates evaluation agents, and they return a JSON report to the client app.',
+  nodes: [
+    { id: 'v', x: 110, y: 85, label: 'Class recording', kind: 'io', w: 175 },
+    { id: 'tr', x: 330, y: 85, label: 'Amazon', sub: 'Transcribe', w: 170 },
+    { id: 'sf', x: 545, y: 85, label: 'Step Functions', sub: 'orchestration', w: 175 },
+    { id: 'e', x: 765, y: 85, label: 'Evaluation', sub: 'agents', kind: 'agent', w: 170 },
+    { id: 'j', x: 965, y: 85, label: 'JSON report', w: 150 },
+    { id: 'app', x: 1115, y: 85, label: 'Client app', kind: 'io', w: 130 },
+  ],
+  edges: [
+    { d: 'M198 85H243' },
+    { d: 'M415 85H456' },
+    { d: 'M633 85H678' },
+    { d: 'M850 85H888' },
+    { d: 'M1040 85H1048' },
+  ],
+});
+
+const caseRag = flow({
+  h: 230,
+  title: 'Cinema assistant retrieval loop',
+  desc: 'A question is rewritten, searched with hybrid keyword and vector search, reranked, and checked by a validator agent; grounded answers become recommendations, otherwise the loop tries again.',
+  nodes: [
+    { id: 'q', x: 95, y: 90, label: 'Question', kind: 'io', w: 130 },
+    { id: 'rw', x: 285, y: 90, label: 'Query rewrite', w: 170 },
+    { id: 'h', x: 490, y: 90, label: 'Hybrid search', sub: 'keyword + vector', w: 180 },
+    { id: 'rr', x: 680, y: 90, label: 'Rerank', w: 140 },
+    { id: 'va', x: 870, y: 90, label: 'Validator agent', sub: 'grounded?', kind: 'agent', w: 180 },
+    { id: 'ans', x: 1090, y: 90, label: 'Answer +', sub: 'recommendation', kind: 'io', w: 170 },
+  ],
+  edges: [
+    { d: 'M160 90H198' },
+    { d: 'M370 90H398' },
+    { d: 'M580 90H608' },
+    { d: 'M750 90H778' },
+    { d: 'M960 90H1003', label: 'yes', at: [982, 66] },
+    { d: 'M870 118C870 200 285 200 285 114', dashed: true, label: 'no, try again', at: [578, 178] },
+  ],
+});
+
+const BUILDERS = {
+  hero, terminal, 'lab-voice': labVoice, 'lab-chat': labChat, timeline, footer,
+  'case-drivethru': caseDriveThru, 'case-whatsapp': caseWhatsApp,
+  'case-classeval': caseClassEval, 'case-rag': caseRag,
+};
 for (const [name, build] of Object.entries(BUILDERS)) {
   for (const [theme, colors] of Object.entries(THEMES)) {
     const file = join(OUT, `${name}-${theme}.svg`);

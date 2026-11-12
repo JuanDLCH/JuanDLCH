@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+<title id="t">Insurance assistant on WhatsApp</title><desc id="d">A WhatsApp user writes; Meta WhatsApp Cloud API sends a webhook to the conversation flows, which handle policy lookups, coverage checks and claims against the insurer systems, then reply.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}
+.flow{stroke-dasharray:2 98;animation:flow 2.4s linear infinite}
+@keyframes flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+.march{animation:march 1s linear infinite}@keyframes march{to{stroke-dashoffset:-12}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.flow{display:none}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#151f35"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#314160"/></marker>
+<marker id="arrowD" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4d5e7f"/></marker>
+<clipPath id="clip"><rect width="1200" height="320" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="320" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="318" rx="15" stroke="#283653" stroke-width="2" fill="none"/>
+<path d="M200 150H248" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.00s" d="M200 150H248" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/>
+<path d="M442 142H498" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.37s" d="M442 142H498" pathLength="100" fill="none" stroke="#48dbc0" stroke-width="6" stroke-linecap="round"/><rect x="435.1" y="106" width="69.80000000000001" height="22" rx="11" fill="#151f35" stroke="#283653"/><text x="470" y="121.5" fill="#8fa2c4" font-size="12" font-weight="600" text-anchor="middle">webhook</text>
+<path d="M680 140C710 120 720 62 748 62" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.74s" d="M680 140C710 120 720 62 748 62" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/>
+<path d="M682 150H748" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.11s" d="M682 150H748" pathLength="100" fill="none" stroke="#48dbc0" stroke-width="6" stroke-linecap="round"/>
+<path d="M680 160C710 180 720 238 748 238" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.48s" d="M680 160C710 180 720 238 748 238" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/>
+<path d="M932 62C960 62 975 110 978 140" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.85s" d="M932 62C960 62 975 110 978 140" pathLength="100" fill="none" stroke="#48dbc0" stroke-width="6" stroke-linecap="round"/>
+<path d="M932 150H978" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-2.22s" d="M932 150H978" pathLength="100" fill="none" stroke="#9586fa" stroke-width="6" stroke-linecap="round"/>
+<path d="M932 238C960 238 975 190 978 160" fill="none" stroke="#314160" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.19s" d="M932 238C960 238 975 190 978 160" pathLength="100" fill="none" stroke="#48dbc0" stroke-width="6" stroke-linecap="round"/>
+<path d="M560 178C520 240 400 240 360 180" fill="none" stroke="#4d5e7f" stroke-width="2" stroke-dasharray="6 6" class="march" marker-end="url(#arrowD)"/><rect x="432.5" y="214" width="55" height="22" rx="11" fill="#151f35" stroke="#283653"/><text x="460" y="229.5" fill="#8fa2c4" font-size="12" font-weight="600" text-anchor="middle">reply</text>
+<g><rect x="30" y="128" width="170" height="44" rx="22" fill="#111b31" stroke="#48dbc0" stroke-width="1.5"/>
+<text x="115" y="155" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">WhatsApp user</text>
+</g>
+<g><rect x="250" y="122" width="190" height="56" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/>
+<text x="345" y="147" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Meta WhatsApp</text>
+<text x="345" y="166" fill="#8fa2c4" font-size="12.5" text-anchor="middle">Cloud API</text></g>
+<g><rect x="500" y="122" width="180" height="56" rx="10" fill="#111b31" stroke="#9586fa" stroke-width="2"/>
+<text x="590" y="147" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Conversation</text>
+<text x="590" y="166" fill="#8fa2c4" font-size="12.5" text-anchor="middle">flows</text></g>
+<g><rect x="750" y="40" width="180" height="44" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/>
+<text x="840" y="67" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Policy lookup</text>
+</g>
+<g><rect x="750" y="128" width="180" height="44" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/>
+<text x="840" y="155" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Coverage check</text>
+</g>
+<g><rect x="750" y="216" width="180" height="44" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/>
+<text x="840" y="243" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Claims</text>
+</g>
+<g><rect x="980" y="128" width="190" height="44" rx="10" fill="#111b31" stroke="#314160" stroke-width="1.5"/><path d="M988 137Q1075 147 1162 137" fill="none" stroke="#314160" stroke-width="1.5"/>
+<text x="1075" y="158" fill="#f3f7ff" font-size="15" font-weight="700" text-anchor="middle">Insurer systems</text>
+</g>
+</g>
+</svg>

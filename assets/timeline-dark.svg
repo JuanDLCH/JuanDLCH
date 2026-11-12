@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="t d">
-<title id="t">Career timeline 2022 – now</title><desc id="d">2022 Full Stack at Stellion Tech; 2023 Cloud &amp; Backend at Trade EC / TRD Global; 2024 AI Engineering; 2024 to now Lead AI Engineer.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="t d">
+<title id="t">Career timeline, 2022 to today</title><desc id="d">2022: Software that runs a business (full stack · stellion tech); 2023: Systems that talk to each other (full stack · trade ec); 2024: AI that ships to production (lead ai engineer · trade ec); 2026: What’s next (ai engineer)</desc>
 <style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
 .draw{stroke-dasharray:100;animation:draw 2.6s cubic-bezier(.6,.1,.3,1) both}
 @keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
@@ -11,40 +11,44 @@
 .s3{animation:pop .5s ease-out 2.45s both}
 @keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
-<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="1050" y2="0"><stop stop-color="#9586fa"/><stop offset=".55" stop-color="#b38df8"/><stop offset="1" stop-color="#48dbc0"/></linearGradient></defs>
-<path d="M60 92H1140" stroke="#283653" stroke-width="3" stroke-linecap="round"/>
-<path class="draw" d="M60 92H1050" pathLength="100" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
-<path d="M1062 92H1140" stroke="#48dbc0" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
+<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1050" y2="0"><stop stop-color="#9586fa"/><stop offset=".55" stop-color="#b38df8"/><stop offset="1" stop-color="#48dbc0"/></linearGradient></defs>
+<path d="M40 88H1160" stroke="#283653" stroke-width="3" stroke-linecap="round"/>
+<path class="draw" d="M40 88H1050" pathLength="100" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+<path d="M1064 88H1170" stroke="#48dbc0" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
 <g class="s0">
 
-<circle cx="150" cy="92" r="8" fill="#111b31" stroke="#9586fa" stroke-width="3"/>
-<text x="150" y="60" fill="#9586fa" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2022</text>
-<text x="150" y="140" fill="#f3f7ff" font-size="22" font-weight="800" text-anchor="middle">Full Stack</text>
-<text x="150" y="168" fill="#8fa2c4" font-size="16" text-anchor="middle">Stellion Tech · two ERP</text>
-<text x="150" y="190" fill="#8fa2c4" font-size="16" text-anchor="middle">systems, end to end</text>
+<circle cx="150" cy="88" r="8" fill="#111b31" stroke="#9586fa" stroke-width="3"/>
+<text x="150" y="56" fill="#9586fa" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2022</text>
+<text x="150" y="134" fill="#f3f7ff" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">Software that runs a business</text>
+<text x="150" y="160" fill="#9586fa" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">FULL STACK · STELLION TECH</text>
+<text x="150" y="188" fill="#8fa2c4" font-size="14.5" text-anchor="middle">Two ERP systems,</text>
+<text x="150" y="209" fill="#8fa2c4" font-size="14.5" text-anchor="middle">end to end</text>
 </g>
 <g class="s1">
 
-<circle cx="450" cy="92" r="8" fill="#111b31" stroke="#9586fa" stroke-width="3"/>
-<text x="450" y="60" fill="#9586fa" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2023</text>
-<text x="450" y="140" fill="#f3f7ff" font-size="22" font-weight="800" text-anchor="middle">Cloud &amp; Backend</text>
-<text x="450" y="168" fill="#8fa2c4" font-size="16" text-anchor="middle">Trade EC / TRD Global</text>
-<text x="450" y="190" fill="#8fa2c4" font-size="16" text-anchor="middle">APIs, integrations, data</text>
+<circle cx="450" cy="88" r="8" fill="#111b31" stroke="#9586fa" stroke-width="3"/>
+<text x="450" y="56" fill="#9586fa" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2023</text>
+<text x="450" y="134" fill="#f3f7ff" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">Systems that talk to each other</text>
+<text x="450" y="160" fill="#9586fa" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">FULL STACK · TRADE EC</text>
+<text x="450" y="188" fill="#8fa2c4" font-size="14.5" text-anchor="middle">APIs, integrations</text>
+<text x="450" y="209" fill="#8fa2c4" font-size="14.5" text-anchor="middle">and data on AWS</text>
 </g>
 <g class="s2">
 
-<circle cx="750" cy="92" r="8" fill="#111b31" stroke="#9586fa" stroke-width="3"/>
-<text x="750" y="60" fill="#9586fa" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2024</text>
-<text x="750" y="140" fill="#f3f7ff" font-size="22" font-weight="800" text-anchor="middle">AI Engineering</text>
-<text x="750" y="168" fill="#8fa2c4" font-size="16" text-anchor="middle">Agents, document search,</text>
-<text x="750" y="190" fill="#8fa2c4" font-size="16" text-anchor="middle">OCR and voice in products</text>
+<circle cx="750" cy="88" r="8" fill="#111b31" stroke="#9586fa" stroke-width="3"/>
+<text x="750" y="56" fill="#9586fa" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2024</text>
+<text x="750" y="134" fill="#f3f7ff" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">AI that ships to production</text>
+<text x="750" y="160" fill="#9586fa" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">LEAD AI ENGINEER · TRADE EC</text>
+<text x="750" y="188" fill="#8fa2c4" font-size="14.5" text-anchor="middle">Led the team: agents, voice,</text>
+<text x="750" y="209" fill="#8fa2c4" font-size="14.5" text-anchor="middle">document AI, AWS architecture</text>
 </g>
 <g class="s3">
-<circle class="ring" cx="1050" cy="92" r="11" fill="none" stroke="#48dbc0" stroke-width="2"/>
-<circle cx="1050" cy="92" r="10" fill="#48dbc0" stroke="#48dbc0" stroke-width="3"/>
-<text x="1050" y="60" fill="#48dbc0" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2024 – NOW</text>
-<text x="1050" y="140" fill="#f3f7ff" font-size="22" font-weight="800" text-anchor="middle">Lead AI Engineer</text>
-<text x="1050" y="168" fill="#8fa2c4" font-size="16" text-anchor="middle">Team lead · AI consulting</text>
-<text x="1050" y="190" fill="#8fa2c4" font-size="16" text-anchor="middle">AWS architecture</text>
+<circle class="ring" cx="1050" cy="88" r="11" fill="none" stroke="#48dbc0" stroke-width="2"/>
+<circle cx="1050" cy="88" r="10" fill="#48dbc0" stroke="#48dbc0" stroke-width="3"/>
+<text x="1050" y="56" fill="#48dbc0" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2026</text>
+<text x="1050" y="134" fill="#f3f7ff" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">What’s next</text>
+<text x="1050" y="160" fill="#48dbc0" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">AI ENGINEER</text>
+<text x="1050" y="188" fill="#8fa2c4" font-size="14.5" text-anchor="middle">A new chapter starts soon.</text>
+<text x="1050" y="209" fill="#8fa2c4" font-size="14.5" text-anchor="middle">More on that shortly.</text>
 </g>
 </svg>

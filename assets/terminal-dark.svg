@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="t d">
-<title id="t">whoami — an animated terminal</title><desc id="d">A terminal types out who Juandy is: Lead AI Engineer in Medellín, his engineering principles, Claude Code as his main tool, and that he is a goalkeeper and Linux tinkerer off the clock.</desc>
+<title id="t">whoami — an animated terminal</title><desc id="d">A terminal types out who Juandy is: an AI Engineer in Medellín, his engineering principles, Claude Code as his main tool, and that off the clock he is a Linux tinkerer who runs automation experiments.</desc>
 <style>text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:20px}
 .screen{animation:screen 14s infinite}
 @keyframes screen{0%,94.29%{opacity:1}98.57%,100%{opacity:0}}
@@ -44,7 +44,7 @@
 <text x="44" y="96" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">whoami</tspan></text>
 <g class="c0 cover"><rect x="68.8" y="77" width="86.8" class="e0" height="29" fill="#0d1424"/><rect class="k0 caret" x="68.8" y="79" width="6.8" height="22" fill="#48dbc0"/></g>
 </g>
-<text class="l1" x="44" y="129" xml:space="preserve"><tspan fill="#f3f7ff">juandy</tspan><tspan fill="#8fa2c4"> — Lead AI Engineer · Medellín, Colombia · </tspan><tspan fill="#48dbc0">6.24°N 75.58°W</tspan></text>
+<text class="l1" x="44" y="129" xml:space="preserve"><tspan fill="#f3f7ff">juandy</tspan><tspan fill="#8fa2c4"> — AI Engineer · Medellín, Colombia · </tspan><tspan fill="#48dbc0">6.24°N 75.58°W</tspan></text>
 <g class="l2">
 <text x="44" y="162" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">cat principles.txt</tspan></text>
 <g class="c2 cover"><rect x="68.8" y="143" width="235.6" class="e2" height="29" fill="#0d1424"/><rect class="k2 caret" x="68.8" y="145" width="6.8" height="22" fill="#48dbc0"/></g>
@@ -61,7 +61,7 @@
 <text x="44" y="360" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">uptime --off-the-clock</tspan></text>
 <g class="c8 cover"><rect x="68.8" y="341" width="285.2" class="e8" height="29" fill="#0d1424"/><rect class="k8 caret" x="68.8" y="343" width="6.8" height="22" fill="#48dbc0"/></g>
 </g>
-<text class="l9" x="44" y="393" xml:space="preserve"><tspan fill="#ffc861">goalkeeper</tspan><tspan fill="#8fa2c4"> (yes, I dive) · </tspan><tspan fill="#48dbc0">linux tinkerer</tspan><tspan fill="#8fa2c4"> · automation experiments</tspan></text>
+<text class="l9" x="44" y="393" xml:space="preserve"><tspan fill="#48dbc0">linux tinkerer</tspan><tspan fill="#8fa2c4"> · </tspan><tspan fill="#ffc861">automation experiments</tspan><tspan fill="#8fa2c4"> · </tspan><tspan fill="#9586fa">ES / EN</tspan></text>
 <g class="lf"><text x="44" y="426"><tspan fill="#9586fa">$ </tspan></text><rect class="blink" x="68.8" y="409" width="6.8" height="22" fill="#48dbc0"/></g>
 </g>
 <rect x=".75" y=".75" width="1198.5" height="458.5" rx="15.5" fill="none" stroke="#283653" stroke-width="1.5"/>

@@ -33,7 +33,7 @@ text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}
 <text x="62" y="194" font-size="50" font-weight="800" letter-spacing="-1.8"><tspan class="w0" fill="#0c9c84">listens.</tspan> <tspan class="w1" fill="#6b58ea">reasons.</tspan> <tspan class="w2" fill="#d1438f">acts.</tspan></text>
 <text x="64" y="236" fill="#506684" font-size="23" font-weight="600">— inside real software, not just demos.</text>
 <path d="M66 266H640" stroke="#c3d4ea" stroke-width="2"/>
-<text x="66" y="300" fill="#506684" font-size="12.5" font-weight="800" letter-spacing="2">LEAD AI ENGINEER · AGENTS · REALTIME VOICE · DOCUMENT AI · AWS</text>
+<text x="66" y="300" fill="#506684" font-size="12.5" font-weight="800" letter-spacing="2">AI ENGINEER · AGENTS · REALTIME VOICE · DOCUMENT AI · AWS</text>
 
 <g fill="none" stroke-width="2" stroke-linecap="round">
 <path d="M790 90 C790 130 850 140 880 150" stroke="#b8cae4"/>

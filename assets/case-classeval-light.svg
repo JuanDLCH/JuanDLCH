@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="t d">
+<title id="t">Automated class evaluation pipeline</title><desc id="d">A class recording goes to Amazon Transcribe, Step Functions orchestrates evaluation agents, and they return a JSON report to the client app.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}
+.flow{stroke-dasharray:2 98;animation:flow 2.4s linear infinite}
+@keyframes flow{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+.march{animation:march 1s linear infinite}@keyframes march{to{stroke-dashoffset:-12}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.flow{display:none}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7faff"/><stop offset="1" stop-color="#e9f1ff"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b8cae4"/></marker>
+<marker id="arrowD" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9aaccb"/></marker>
+<clipPath id="clip"><rect width="1200" height="170" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="170" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="168" rx="15" stroke="#c3d4ea" stroke-width="2" fill="none"/>
+<path d="M198 85H243" fill="none" stroke="#b8cae4" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.00s" d="M198 85H243" pathLength="100" fill="none" stroke="#6b58ea" stroke-width="6" stroke-linecap="round"/>
+<path d="M415 85H456" fill="none" stroke="#b8cae4" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.37s" d="M415 85H456" pathLength="100" fill="none" stroke="#0c9c84" stroke-width="6" stroke-linecap="round"/>
+<path d="M633 85H678" fill="none" stroke="#b8cae4" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-0.74s" d="M633 85H678" pathLength="100" fill="none" stroke="#6b58ea" stroke-width="6" stroke-linecap="round"/>
+<path d="M850 85H888" fill="none" stroke="#b8cae4" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.11s" d="M850 85H888" pathLength="100" fill="none" stroke="#0c9c84" stroke-width="6" stroke-linecap="round"/>
+<path d="M1040 85H1048" fill="none" stroke="#b8cae4" stroke-width="2" marker-end="url(#arrow)"/><path class="flow" style="animation-delay:-1.48s" d="M1040 85H1048" pathLength="100" fill="none" stroke="#6b58ea" stroke-width="6" stroke-linecap="round"/>
+<g><rect x="22.5" y="63" width="175" height="44" rx="22" fill="#ffffff" stroke="#0c9c84" stroke-width="1.5"/>
+<text x="110" y="90" fill="#14243c" font-size="15" font-weight="700" text-anchor="middle">Class recording</text>
+</g>
+<g><rect x="245" y="57" width="170" height="56" rx="10" fill="#ffffff" stroke="#b8cae4" stroke-width="1.5"/>
+<text x="330" y="82" fill="#14243c" font-size="15" font-weight="700" text-anchor="middle">Amazon</text>
+<text x="330" y="101" fill="#506684" font-size="12.5" text-anchor="middle">Transcribe</text></g>
+<g><rect x="457.5" y="57" width="175" height="56" rx="10" fill="#ffffff" stroke="#b8cae4" stroke-width="1.5"/>
+<text x="545" y="82" fill="#14243c" font-size="15" font-weight="700" text-anchor="middle">Step Functions</text>
+<text x="545" y="101" fill="#506684" font-size="12.5" text-anchor="middle">orchestration</text></g>
+<g><rect x="680" y="57" width="170" height="56" rx="10" fill="#ffffff" stroke="#6b58ea" stroke-width="2"/>
+<text x="765" y="82" fill="#14243c" font-size="15" font-weight="700" text-anchor="middle">Evaluation</text>
+<text x="765" y="101" fill="#506684" font-size="12.5" text-anchor="middle">agents</text></g>
+<g><rect x="890" y="63" width="150" height="44" rx="10" fill="#ffffff" stroke="#b8cae4" stroke-width="1.5"/>
+<text x="965" y="90" fill="#14243c" font-size="15" font-weight="700" text-anchor="middle">JSON report</text>
+</g>
+<g><rect x="1050" y="63" width="130" height="44" rx="22" fill="#ffffff" stroke="#0c9c84" stroke-width="1.5"/>
+<text x="1115" y="90" fill="#14243c" font-size="15" font-weight="700" text-anchor="middle">Client app</text>
+</g>
+</g>
+</svg>

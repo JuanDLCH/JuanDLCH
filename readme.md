@@ -24,30 +24,30 @@
 
 ### Hey, I'm Juandy 👋
 
-I'm **Juan Diego Londoño**, a **Lead AI Engineer** from **Medellín, Colombia**. I design and ship AI that does real work: **agents** that call tools and keep state, **realtime voice** you can interrupt, and **document AI** that reads what businesses actually send. I take each project from the client's first question to running on AWS.
+I'm **Juan Diego Londoño**, an **AI Engineer** from **Medellín, Colombia**. I design and ship AI that does real work: **agents** that call tools and keep state, **realtime voice** you can interrupt, and **document AI** that reads what businesses actually send. I take each project from the client's first question to running on AWS.
 
-I'm a software engineer first: full stack in 2022, then backend and cloud, and now I lead AI projects end to end. That covers discovery, architecture, cost and time estimates, the team and delivery.
+I'm a software engineer first. I started full stack in 2022, building ERPs, APIs and integrations on AWS. In 2024 I went straight to **Lead AI Engineer at Trade EC**, where I led a 3-person team building agents, RAG/OCR and voice on AWS, and handled client discovery, architecture and cost estimates.
 
 <details>
   <summary><strong>🇨🇴 Léelo en español</strong></summary>
   <br>
 
-Soy **Juan Diego Londoño (Juandy)**, **Lead AI Engineer** en **Medellín, Colombia**. Diseño y llevo a producción IA que hace trabajo real: **agentes** que usan herramientas y mantienen estado, **voz en tiempo real** que puedes interrumpir y **IA documental** que lee lo que las empresas realmente envían. Acompaño cada proyecto desde la primera pregunta del cliente hasta que corre en AWS.
+Soy **Juan Diego Londoño (Juandy)**, **AI Engineer** en **Medellín, Colombia**. Diseño y llevo a producción IA que hace trabajo real: **agentes** que usan herramientas y mantienen estado, **voz en tiempo real** que puedes interrumpir y **IA documental** que lee lo que las empresas realmente envían. Acompaño cada proyecto desde la primera pregunta del cliente hasta que corre en AWS.
 
-Primero soy ingeniero de software: full stack en 2022, luego backend y nube, y hoy lidero proyectos de IA de punta a punta: descubrimiento, arquitectura, estimación de costos y tiempos, coordinación del equipo y entrega.
+Primero soy ingeniero de software. Empecé como full stack en 2022, construyendo ERPs, APIs e integraciones en AWS. En 2024 pasé directo a **Lead AI Engineer en Trade EC**, donde lideré un equipo de 3 personas que construía agentes, RAG/OCR y voz en AWS, y me encargué del descubrimiento con clientes, la arquitectura y la estimación de costos.
 
 - 🎙️ **Habla con mi CV:** [Sophie](https://juandlch.dev/lab/voice) es un agente de voz que conoce mi trabajo. Interrúmpela cuando quieras.
 - 💬 **Mira al agente pensar:** el [Chat Lab](https://juandlch.dev/lab/chat) muestra cada paso del agente en vivo.
 - 📄 **CV:** [Español](https://juandlch.dev/cv/Juan-Londono_AI-Engineer_ES.pdf) · [English](https://juandlch.dev/cv/Juan-Londono_AI-Engineer.pdf)
 - 📅 **¿Hablamos?** [Agenda una llamada](https://calendar.app.google/6ae9dpvPz8mEiRRdA) o escríbeme a [juandiego0329@gmail.com](mailto:juandiego0329@gmail.com).
 
-<sub>Fuera del teclado: arquero de fútbol, Linux y experimentos de automatización. ⚽🐧</sub>
+<sub>Fuera del teclado: Linux y experimentos de automatización. 🐧</sub>
 </details>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/terminal-light.svg">
-  <img src="./assets/terminal-dark.svg" alt="Animated terminal: whoami prints Juandy, Lead AI Engineer in Medellín; cat principles.txt lists architecture before implementation, a latency/cost/failure budget for every AI feature, and production-grade from the first commit; Claude Code is the main tool and every PR still gets human eyes; off the clock: goalkeeper, Linux tinkerer, automation experiments." title="$ whoami" width="100%">
+  <img src="./assets/terminal-dark.svg" alt="Animated terminal: whoami prints Juandy, AI Engineer in Medellín; cat principles.txt lists architecture before implementation, a latency/cost/failure budget for every AI feature, and production-grade from the first commit; Claude Code is the main tool and every PR still gets human eyes; off the clock: Linux tinkerer and automation experiments." title="$ whoami" width="100%">
 </picture>
 
 ### Don't take my word for it. Try it 👇
@@ -69,7 +69,7 @@ Primero soy ingeniero de software: full stack en 2022, luego backend y nube, y h
 
 ### What I've shipped
 
-<sub>Client names are anonymised and the work lives in private repos, so these are the shapes of the systems. Click a case file to open it.</sub>
+<sub>Client names are anonymised and the work lives in private repos, so these are the shapes of the systems. Click a case file to open it and watch the data flow.</sub>
 
 <details>
   <summary><strong>🍔 Drive-thru voice AI</strong>: a voice agent that takes your order, and lets you interrupt it</summary>
@@ -77,15 +77,11 @@ Primero soy ingeniero de software: full stack en 2022, luego backend y nube, y h
 
 Realtime voice agents for a quick-service chain that take orders at the drive-thru. I built the voice integration with **ElevenLabs on Claude models**, including turn-taking, interruptions (barge-in) and placing the order into the system.
 
-```mermaid
-flowchart LR
-    C(["🚗 Customer speaks"]) -->|"audio stream"| STT["Deepgram<br/>streaming STT"]
-    STT --> A{"Claude agent<br/>turn-taking"}
-    A -->|"tool call"| POS[("Order / POS API")]
-    A --> TTS["ElevenLabs<br/>voice"]
-    TTS -->|"speaks back"| C
-    C -. "interrupts mid-sentence" .-> A
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/case-drivethru-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/case-drivethru-light.svg">
+  <img src="./assets/case-drivethru-dark.svg" alt="Architecture: the customer speaks, Deepgram streams speech to text, a Claude agent handles turn-taking and calls the order/POS API, ElevenLabs speaks back, and the customer can interrupt mid-sentence." width="100%">
+</picture>
 
 <img src="./assets/icons/anthropic.svg" width="26" height="26" alt="Claude" title="Claude"> <img src="./assets/icons/elevenlabs.svg" width="26" height="26" alt="ElevenLabs" title="ElevenLabs"> <img src="./assets/icons/deepgram.svg" width="26" height="26" alt="Deepgram" title="Deepgram"><sub>Claude · ElevenLabs · Deepgram · WebSockets · AWS</sub>
 </details>
@@ -96,16 +92,11 @@ flowchart LR
 
 Built and evolved conversations on **Meta's WhatsApp Cloud API** for an insurer: policy lookups, coverage checks, claims, and connections to the insurer's own systems. I also migrated the older flows.
 
-```mermaid
-flowchart LR
-    U(["📱 WhatsApp user"]) --> M["Meta WhatsApp<br/>Cloud API"]
-    M -->|"webhook"| R{"Conversation<br/>flows"}
-    R --> P["Policy lookup"]
-    R --> CV["Coverage check"]
-    R --> CL["Claims"]
-    P & CV & CL --> I[("Insurer systems")]
-    R -->|"reply"| M
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/case-whatsapp-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/case-whatsapp-light.svg">
+  <img src="./assets/case-whatsapp-dark.svg" alt="Architecture: WhatsApp user, Meta WhatsApp Cloud API, webhook into the conversation flows, which handle policy lookup, coverage check and claims against the insurer systems and reply." width="100%">
+</picture>
 
 <img src="./assets/icons/whatsapp.svg" width="26" height="26" alt="WhatsApp" title="WhatsApp"> <img src="./assets/icons/meta.svg" width="26" height="26" alt="Meta" title="Meta"> <sub>WhatsApp Cloud API · Meta · insurer integrations</sub>
 </details>
@@ -116,14 +107,11 @@ flowchart LR
 
 I helped build a pipeline that **transcribes class recordings**, orchestrates the work with **Step Functions**, and runs **evaluation agents** that return JSON reports for the client's app.
 
-```mermaid
-flowchart LR
-    V(["🎥 Class recording"]) --> TR["Amazon Transcribe"]
-    TR --> SF{{"Step Functions"}}
-    SF --> E["Evaluation agents"]
-    E --> J["JSON report"]
-    J --> APP(["Client app"])
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/case-classeval-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/case-classeval-light.svg">
+  <img src="./assets/case-classeval-dark.svg" alt="Pipeline: class recording, Amazon Transcribe, Step Functions orchestration, evaluation agents, JSON report, client app." width="100%">
+</picture>
 
 <img src="./assets/aws/transcribe.svg" width="26" height="26" alt="Amazon Transcribe" title="Amazon Transcribe"> <img src="./assets/aws/stepfunctions.svg" width="26" height="26" alt="Step Functions" title="Step Functions"> <sub>Amazon Transcribe · Step Functions · evaluation agents</sub>
 </details>
@@ -134,15 +122,11 @@ flowchart LR
 
 A digital-channel assistant that answers from the live listings and recommends what to watch. I worked on retrieval, recommendation logic, backend integrations and the AWS architecture. The retrieval loop below is the pattern I keep coming back to.
 
-```mermaid
-flowchart LR
-    Q(["❓ Question"]) --> RW["Query rewrite"]
-    RW --> H["Hybrid search<br/>keyword + vector"]
-    H --> RR["Rerank"]
-    RR --> VA{"Validator agent<br/>grounded?"}
-    VA -->|"yes"| ANS(["✅ Answer + recommendation"])
-    VA -. "no, try again" .-> RW
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/case-rag-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/case-rag-light.svg">
+  <img src="./assets/case-rag-dark.svg" alt="Retrieval loop: question, query rewrite, hybrid keyword and vector search, rerank, validator agent; if grounded it answers with a recommendation, otherwise it tries again." width="100%">
+</picture>
 
 <sub>RAG · hybrid search · reranking · AWS</sub>
 </details>
@@ -154,7 +138,7 @@ flowchart LR
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/timeline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/timeline-light.svg">
-  <img src="./assets/timeline-dark.svg" alt="Career timeline: 2022 Full Stack at Stellion Tech; 2023 Cloud & Backend at Trade EC / TRD Global; 2024 AI Engineering; 2024 to now Lead AI Engineer." width="100%">
+  <img src="./assets/timeline-dark.svg" alt="Career timeline. 2022: software that runs a business (Full Stack, Stellion Tech). 2023: systems that talk to each other (Full Stack, Trade EC). 2024: AI that ships to production (Lead AI Engineer, Trade EC). 2026: what's next (AI Engineer)." width="100%">
 </picture>
 
 <p align="center">
@@ -375,7 +359,7 @@ flowchart LR
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg">
-    <img src="./assets/footer-dark.svg" alt="Useful AI over impressive demos. Off the clock: goalkeeper, Linux tinkerer, automation experiments. Medellín, Colombia." title="Saved. 🧤" width="100%">
+    <img src="./assets/footer-dark.svg" alt="Useful AI over impressive demos. A demo is step one; evals, review and production are the job. Medellín, Colombia." title="demo → evals → review → prod" width="100%">
   </picture>
 </a>
 
