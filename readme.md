@@ -341,17 +341,17 @@ A digital-channel assistant that answers from the live listings and recommends w
 
 </details>
 
-### GitHub snapshot
+### Lately on GitHub
 
-<div align="center">
+<a href="https://github.com/JuanDLCH?tab=repositories">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=JuanDLCH&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=JuanDLCH&show_icons=true&include_all_commits=true&hide_border=true&theme=default">
-    <img src="https://github-stats-extended.vercel.app/api?username=JuanDLCH&show_icons=true&include_all_commits=true&hide_border=true&theme=default" alt="GitHub activity statistics for JuanDLCH" height="175">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
+    <img src="./assets/activity-dark.svg" alt="GitHub activity over the last 12 months: total contributions including private repos, active days, best streak, a heatmap of recent weeks and recently pushed public repos." width="100%">
   </picture>
-</div>
+</a>
 
-<p align="center"><sub>Public numbers only tell part of the story. Most of my recent work lives in private repos.</sub></p>
+<p align="center"><sub>A GitHub Action rebuilds this card every day from the GraphQL API. Private contributions are counted, but private repos stay private.</sub></p>
 
 <br>
 

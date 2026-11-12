@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Generates the animated profile SVGs in dark + light variants from one template.
 // Usage: node scripts/build-svgs.mjs   (writes assets/<name>-{dark,light}.svg)
+// The activity card needs data/activity.json first: GITHUB_TOKEN=$(gh auth token) node scripts/fetch-activity.mjs
 //
 // Rules every SVG follows (GitHub renders them through <img>, so no JS, no
 // external fonts/images, no clickable links inside):
@@ -8,7 +9,7 @@
 //     switch it all off and leave a readable final frame;
 //   - base styles describe the *final* frame; keyframes provide the motion.
 
-import { writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -572,10 +573,102 @@ const caseRag = flow({
   ],
 });
 
+/* ------------------------------------------------------- activity card */
+// Built from data/activity.json (written by scripts/fetch-activity.mjs, refreshed daily
+// by .github/workflows/activity.yml). The calendar already includes private contributions.
+const ACTIVITY_FILE = join(dirname(fileURLToPath(import.meta.url)), '..', 'data', 'activity.json');
+const activityData = existsSync(ACTIVITY_FILE) ? JSON.parse(readFileSync(ACTIVITY_FILE, 'utf8')) : null;
+
+function activity(c) {
+  const a = activityData;
+  const W = 1200, H = 330, WEEKS = 30, CELL = 17, GAP = 4, GX = 524, GY = 74;
+  // align the grid so each column is a Sunday→Saturday week ending with the latest day
+  const last = new Date(a.days[a.days.length - 1].date + 'T00:00:00Z');
+  const span = (WEEKS - 1) * 7 + last.getUTCDay() + 1;
+  const days = a.days.slice(-span);
+  const nz = days.map((d) => d.n).filter((n) => n > 0).sort((x, y) => x - y);
+  const q = (p) => nz.length ? nz[Math.min(nz.length - 1, Math.floor(p * nz.length))] : 1;
+  const [q1, q2, q3] = [q(0.25), q(0.5), q(0.75)];
+  const level = (n) => (n === 0 ? 0 : n <= q1 ? 1 : n <= q2 ? 2 : n <= q3 ? 3 : 4);
+  const fills = [null, [c.violet, 0.35], [c.violet, 0.7], [c.lilac, 1], [c.teal, 1]];
+  const css = [`text{font-family:${SANS}}.mono{font-family:${MONO}}`,
+    `.cell{animation:cell .45s ease-out both}`,
+    `@keyframes cell{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}`,
+    `.cell{transform-box:fill-box;transform-origin:center}`,
+    `.today{transform-box:fill-box;transform-origin:center;animation:ring 1.8s ease-out 1.6s infinite both}`,
+    `@keyframes ring{0%{transform:scale(.8);opacity:.9}100%{transform:scale(2.2);opacity:0}}`,
+    REDUCED()];
+  const months = [];
+  const cells = days.map((d, i) => {
+    const col = Math.floor(i / 7), row = new Date(d.date + 'T00:00:00Z').getUTCDay();
+    const x = GX + col * (CELL + GAP), y = GY + row * (CELL + GAP);
+    if (d.date.endsWith('-01') || (i === 0 && row === 0)) {
+      const m = new Date(d.date + 'T00:00:00Z').toLocaleString('en-US', { month: 'short', timeZone: 'UTC' });
+      if (!months.length || x - months[months.length - 1].x > 40) months.push({ x, m });
+    }
+    const L = level(d.n);
+    const fill = L ? `fill="${fills[L][0]}" fill-opacity="${fills[L][1]}"` : `fill="${c.card}" stroke="${c.border}"`;
+    return `<rect class="cell" style="animation-delay:${(col * 0.035 + row * 0.01).toFixed(3)}s" x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="4" ${fill}><title>${d.date}: ${d.n}</title></rect>`;
+  });
+  const li = days.length - 1;
+  const tx = GX + Math.floor(li / 7) * (CELL + GAP), ty = GY + last.getUTCDay() * (CELL + GAP);
+  const active = a.days.filter((d) => d.n > 0).length;
+  const busiest = Math.max(...a.days.map((d) => d.n));
+  const tiles = [
+    [String(active), 'active days'],
+    [`${a.streak.longest}`, 'day best streak'],
+    [String(busiest), 'on the busiest day'],
+  ];
+  const fmt = (iso) => new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  const halfYear = Date.parse(a.generatedAt) - 182 * 864e5;
+  const recent = a.recent.filter((r) => Date.parse(r.pushedAt) >= halfYear);
+  let cx = 300;
+  const chips = recent.map((r) => {
+    const label = `${r.name}${r.language ? ` · ${r.language}` : ''} · ${fmt(r.pushedAt)}`;
+    const w = label.length * 8.1 + 40;
+    const out = `<g><rect x="${cx}" y="276" width="${w.toFixed(0)}" height="30" rx="15" fill="${c.card}" stroke="${c.cardStroke}"/>
+<circle cx="${cx + 17}" cy="291" r="5" fill="${r.color || c.muted}"/>
+<text x="${cx + 30}" y="296" font-size="13.5" class="mono" xml:space="preserve"><tspan fill="${c.text}">${esc(r.name)}</tspan><tspan fill="${c.muted}">${esc(label.slice(r.name.length))}</tspan></text></g>`;
+    cx += w + 12;
+    return out;
+  }).join('\n');
+  const legendX = GX + WEEKS * (CELL + GAP) - GAP;
+  const body = `<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${c.bg1}"/><stop offset="1" stop-color="${c.bg2}"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="${c.violet}"/><stop offset=".55" stop-color="${c.lilac}"/><stop offset="1" stop-color="${c.teal}"/></linearGradient>
+<clipPath id="clip"><rect width="${W}" height="${H}" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="${W}" height="${H}" fill="url(#bg)"/>
+<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="17" stroke="${c.border}" stroke-width="2" fill="none"/>
+<text x="44" y="54" fill="${c.teal}" font-size="13" font-weight="800" letter-spacing="2">ACTIVITY · LAST 12 MONTHS</text>
+<text x="40" y="128" fill="url(#accent)" font-size="76" font-weight="800" letter-spacing="-3">${a.total}</text>
+<text x="44" y="160" fill="${c.text}" font-size="21" font-weight="700">contributions</text>
+<text x="44" y="186" fill="${c.muted}" font-size="15">${a.private} in private repos, where the client work lives.</text>
+${tiles.map(([n, l], i) => `<g><text x="${44 + i * 152}" y="232" fill="${c.text}" font-size="26" font-weight="800">${n}</text><text x="${44 + i * 152}" y="252" fill="${c.muted}" font-size="12.5">${l}</text></g>`).join('\n')}
+${months.map((m) => `<text x="${m.x}" y="${GY - 12}" fill="${c.faint}" font-size="12" class="mono">${m.m}</text>`).join('\n')}
+${cells.join('\n')}
+<rect class="today" x="${tx}" y="${ty}" width="${CELL}" height="${CELL}" rx="4" fill="none" stroke="${c.teal}" stroke-width="2"/>
+<text x="${legendX - 152}" y="${GY + 7 * (CELL + GAP) + 14}" fill="${c.faint}" font-size="12" text-anchor="end">less</text>
+${[0, 1, 2, 3, 4].map((L, i) => `<rect x="${legendX - 146 + i * 22}" y="${GY + 7 * (CELL + GAP) + 2}" width="14" height="14" rx="3.5" ${L ? `fill="${fills[L][0]}" fill-opacity="${fills[L][1]}"` : `fill="${c.card}" stroke="${c.border}"`}/>`).join('')}
+<text x="${legendX}" y="${GY + 7 * (CELL + GAP) + 14}" fill="${c.faint}" font-size="12" text-anchor="end">more</text>
+<path d="M40 258H${W - 40}" stroke="${c.border}" stroke-width="1.5" opacity="0"/>
+${recent.length ? `<text x="44" y="296" fill="${c.muted}" font-size="12" font-weight="800" letter-spacing="1.8">RECENTLY PUSHED (PUBLIC)</text>\n${chips}` : ''}
+<text x="${W - 40}" y="${H - 14}" fill="${c.faint}" font-size="10.5" text-anchor="end" class="mono">updated ${fmt(a.generatedAt)}</text>
+</g>`;
+  return svg({
+    w: W, h: H,
+    title: `${a.total} GitHub contributions in the last 12 months`,
+    desc: `${a.total} contributions in the last year (${a.private} in private repos), ${active} active days, a ${a.streak.longest}-day best streak. Heatmap of the last ${WEEKS} weeks. Recently pushed public repos: ${recent.map((r) => r.name).join(', ') || 'none'}.`,
+    css: css.join('\n'), body,
+  });
+}
+
 const BUILDERS = {
   hero, terminal, 'lab-voice': labVoice, 'lab-chat': labChat, timeline, footer,
   'case-drivethru': caseDriveThru, 'case-whatsapp': caseWhatsApp,
   'case-classeval': caseClassEval, 'case-rag': caseRag,
+  ...(activityData ? { activity } : {}),
 };
 for (const [name, build] of Object.entries(BUILDERS)) {
   for (const [theme, colors] of Object.entries(THEMES)) {
