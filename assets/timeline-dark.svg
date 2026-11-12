@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="t d">
-<title id="t">Career timeline, 2022 to today</title><desc id="d">2022: Software that runs a business (full stack · stellion tech); 2023: Systems that talk to each other (full stack · trade ec); 2024: AI that ships to production (lead ai engineer · trade ec); 2026: What’s next (ai engineer)</desc>
+<title id="t">Career timeline, 2022 to today</title><desc id="d">2022: Software that runs a business (full stack · stellion tech); 2023: Systems that talk to each other (full stack · trade ec); 2024: AI that ships to production (lead ai engineer · trade ec); 2026: AI engineering at global scale (ai engineer · factored)</desc>
 <style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
 .draw{stroke-dasharray:100;animation:draw 2.6s cubic-bezier(.6,.1,.3,1) both}
 @keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
@@ -46,9 +46,9 @@
 <circle class="ring" cx="1050" cy="88" r="11" fill="none" stroke="#48dbc0" stroke-width="2"/>
 <circle cx="1050" cy="88" r="10" fill="#48dbc0" stroke="#48dbc0" stroke-width="3"/>
 <text x="1050" y="56" fill="#48dbc0" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2026</text>
-<text x="1050" y="134" fill="#f3f7ff" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">What’s next</text>
-<text x="1050" y="160" fill="#48dbc0" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">AI ENGINEER</text>
-<text x="1050" y="188" fill="#8fa2c4" font-size="14.5" text-anchor="middle">A new chapter starts soon.</text>
-<text x="1050" y="209" fill="#8fa2c4" font-size="14.5" text-anchor="middle">More on that shortly.</text>
+<text x="1050" y="134" fill="#f3f7ff" font-size="17.5" font-weight="800" text-anchor="middle" letter-spacing="-.2">AI engineering at global scale</text>
+<text x="1050" y="160" fill="#48dbc0" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.6">AI ENGINEER · FACTORED</text>
+<text x="1050" y="188" fill="#8fa2c4" font-size="14.5" text-anchor="middle">Joining an AI team that builds</text>
+<text x="1050" y="209" fill="#8fa2c4" font-size="14.5" text-anchor="middle">for companies around the world</text>
 </g>
 </svg>

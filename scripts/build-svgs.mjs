@@ -33,11 +33,11 @@ const THEMES = {
 // The current chapter: shown in the terminal `whoami` and as the last timeline stop.
 // Keep it generic and true; it closes the story as wider scope, not as a rank.
 const NOW = {
-  whoami: 'AI Engineer',
+  whoami: 'AI Engineer · Factored',
   year: '2026',
-  head: 'What’s next',
-  role: 'AI ENGINEER',
-  d: ['A new chapter starts soon.', 'More on that shortly.'],
+  head: 'AI engineering at global scale',
+  role: 'AI ENGINEER · FACTORED',
+  d: ['Joining an AI team that builds', 'for companies around the world'],
 };
 
 const SANS = "Inter,'Segoe UI',Helvetica,Arial,sans-serif";

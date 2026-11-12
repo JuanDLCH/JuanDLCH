@@ -24,7 +24,7 @@
 
 ### Hey, I'm Juandy 👋
 
-I'm **Juan Diego Londoño**, an **AI Engineer** from **Medellín, Colombia**. I design and ship AI that does real work: **agents** that call tools and keep state, **realtime voice** you can interrupt, and **document AI** that reads what businesses actually send. I take each project from the client's first question to running on AWS.
+I'm **Juan Diego Londoño**, an **AI Engineer at Factored**, based in **Medellín, Colombia**. I design and ship AI that does real work: **agents** that call tools and keep state, **realtime voice** you can interrupt, and **document AI** that reads what businesses actually send. I take each project from the client's first question to running on AWS.
 
 I'm a software engineer first. I started full stack in 2022, building ERPs, APIs and integrations on AWS. In 2024 I went straight to **Lead AI Engineer at Trade EC**, where I led a 3-person team building agents, RAG/OCR and voice on AWS, and handled client discovery, architecture and cost estimates.
 
@@ -32,7 +32,7 @@ I'm a software engineer first. I started full stack in 2022, building ERPs, APIs
   <summary><strong>🇨🇴 Léelo en español</strong></summary>
   <br>
 
-Soy **Juan Diego Londoño (Juandy)**, **AI Engineer** en **Medellín, Colombia**. Diseño y llevo a producción IA que hace trabajo real: **agentes** que usan herramientas y mantienen estado, **voz en tiempo real** que puedes interrumpir y **IA documental** que lee lo que las empresas realmente envían. Acompaño cada proyecto desde la primera pregunta del cliente hasta que corre en AWS.
+Soy **Juan Diego Londoño (Juandy)**, **AI Engineer en Factored**, desde **Medellín, Colombia**. Diseño y llevo a producción IA que hace trabajo real: **agentes** que usan herramientas y mantienen estado, **voz en tiempo real** que puedes interrumpir y **IA documental** que lee lo que las empresas realmente envían. Acompaño cada proyecto desde la primera pregunta del cliente hasta que corre en AWS.
 
 Primero soy ingeniero de software. Empecé como full stack en 2022, construyendo ERPs, APIs e integraciones en AWS. En 2024 pasé directo a **Lead AI Engineer en Trade EC**, donde lideré un equipo de 3 personas que construía agentes, RAG/OCR y voz en AWS, y me encargué del descubrimiento con clientes, la arquitectura y la estimación de costos.
 
@@ -133,12 +133,12 @@ A digital-channel assistant that answers from the live listings and recommends w
 
 <sub>Also shipped: OCR and agents for financial services, HubSpot CRM integrations, and AWS data pipelines.</sub>
 
-### The road so far
+### From full stack to AI at scale
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/timeline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/timeline-light.svg">
-  <img src="./assets/timeline-dark.svg" alt="Career timeline. 2022: software that runs a business (Full Stack, Stellion Tech). 2023: systems that talk to each other (Full Stack, Trade EC). 2024: AI that ships to production (Lead AI Engineer, Trade EC). 2026: what's next (AI Engineer)." width="100%">
+  <img src="./assets/timeline-dark.svg" alt="Career timeline. 2022: software that runs a business (Full Stack, Stellion Tech). 2023: systems that talk to each other (Full Stack, Trade EC). 2024: AI that ships to production (Lead AI Engineer, Trade EC). 2026: AI engineering at global scale (AI Engineer, Factored)." width="100%">
 </picture>
 
 <p align="center">
