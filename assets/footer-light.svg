@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-labelledby="t d">
+<title id="t">Useful AI over impressive demos</title><desc id="d">Footer: a goalkeeper glove dives to catch a curly-brace ball. Off the clock Juandy is a goalkeeper, Linux tinkerer and automation experimenter, based in Medellín.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.ball{animation:ball 4.2s cubic-bezier(.3,.6,.4,1) infinite}
+@keyframes ball{0%{transform:translate(0,0);opacity:0}6%{opacity:1}45%{transform:translate(330px,-70px)}55%,82%{transform:translate(372px,-58px);opacity:1}90%,100%{transform:translate(372px,-58px);opacity:0}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 4.2s linear infinite}
+@keyframes spin{0%{transform:rotate(0)}55%,100%{transform:rotate(540deg)}}
+.glove{animation:glove 4.2s ease-in-out infinite}
+@keyframes glove{0%,30%{transform:translate(0,0) rotate(0)}52%,80%{transform:translate(-22px,-14px) rotate(-12deg)}95%,100%{transform:translate(0,0) rotate(0)}}
+.save{transform-box:fill-box;transform-origin:center;animation:save 4.2s ease-out infinite}
+@keyframes save{0%,54%{opacity:0;transform:scale(.6)}60%{opacity:1;transform:scale(1.12)}64%,82%{opacity:1;transform:scale(1)}90%,100%{opacity:0;transform:scale(1)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.ball{transform:translate(372px,-58px)}.glove{transform:translate(-22px,-14px) rotate(-12deg)}}</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7faff"/><stop offset="1" stop-color="#e9f1ff"/></linearGradient>
+<clipPath id="clip"><rect width="1200" height="210" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="210" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="208" rx="17" stroke="#c3d4ea" stroke-width="2" fill="none"/>
+<text x="56" y="82" fill="#14243c" font-size="34" font-weight="800" letter-spacing="-1">Useful AI over impressive demos.</text>
+<text x="58" y="118" fill="#506684" font-size="18">Off the clock: goalkeeper, Linux tinkerer, automation experiments.</text>
+<text x="58" y="160" fill="#9aaccb" font-size="13" letter-spacing="1" class="mono">MEDELLÍN, CO · 6.24°N 75.58°W · ES / EN</text>
+<path d="M860 40V182M878 40V182M896 40V182M914 40V182M932 40V182M950 40V182M968 40V182M986 40V182M1004 40V182M1022 40V182M1040 40V182M1058 40V182M1076 40V182M1094 40V182M1112 40V182M1130 40V182M1148 40V182M852 58H1158M852 76H1158M852 94H1158M852 112H1158M852 130H1158M852 148H1158M852 166H1158" stroke="#c3d4ea" stroke-width="1" opacity=".8"/>
+<path d="M852 184V40H1158V184" fill="none" stroke="#506684" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M600 186H1180" stroke="#c3d4ea" stroke-width="2"/>
+<g class="glove" style="transform-origin:1030px 130px">
+<g transform="translate(1030 120)" stroke="#14243c" stroke-opacity=".25" stroke-width="1.5">
+<rect x="-29" y="-48" width="13" height="44" rx="6.5" fill="#6b58ea"/>
+<rect x="-14" y="-56" width="13" height="52" rx="6.5" fill="#6b58ea"/>
+<rect x="1" y="-54" width="13" height="50" rx="6.5" fill="#6b58ea"/>
+<rect x="16" y="-44" width="13" height="40" rx="6.5" fill="#6b58ea"/>
+<rect x="-30" y="-14" width="60" height="50" rx="16" fill="#6b58ea"/>
+<rect x="-52" y="-6" width="15" height="38" rx="7.5" fill="#8f5ee8" transform="rotate(-38 -44 13)"/>
+<rect x="-26" y="34" width="52" height="16" rx="5" fill="#0c9c84"/>
+<path d="M-18 8h36" stroke="#ffffff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+</g></g>
+<g class="ball"><g class="spin"><circle cx="640" cy="160" r="17" fill="#ffffff" stroke="#14243c" stroke-opacity=".35" stroke-width="1.5"/>
+<text x="640" y="165" fill="#6b58ea" font-size="14" font-weight="800" text-anchor="middle" class="mono">{ }</text></g></g>
+<g class="save"><text x="928" y="30" fill="#e0a21c" font-size="18" font-weight="900" letter-spacing="2" text-anchor="middle" transform="rotate(-6 928 30)">SAVED!</text></g>
+</g>
+</svg>

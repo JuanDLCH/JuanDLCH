@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="t d">
+<title id="t">Career timeline 2022 – now</title><desc id="d">2022 Full Stack at Stellion Tech; 2023 Cloud &amp; Backend at Trade EC / TRD Global; 2024 AI Engineering; 2024 to now Lead AI Engineer.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.draw{stroke-dasharray:100;animation:draw 2.6s cubic-bezier(.6,.1,.3,1) both}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+.ring{transform-box:fill-box;transform-origin:center;animation:ring 2s ease-out 2.6s infinite both}
+@keyframes ring{0%{transform:scale(.6);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+.s0{animation:pop .5s ease-out 0.15s both}
+.s1{animation:pop .5s ease-out 0.92s both}
+.s2{animation:pop .5s ease-out 1.68s both}
+.s3{animation:pop .5s ease-out 2.45s both}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="1050" y2="0"><stop stop-color="#6b58ea"/><stop offset=".55" stop-color="#8f5ee8"/><stop offset="1" stop-color="#0c9c84"/></linearGradient></defs>
+<path d="M60 92H1140" stroke="#c3d4ea" stroke-width="3" stroke-linecap="round"/>
+<path class="draw" d="M60 92H1050" pathLength="100" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+<path d="M1062 92H1140" stroke="#0c9c84" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
+<g class="s0">
+
+<circle cx="150" cy="92" r="8" fill="#ffffff" stroke="#6b58ea" stroke-width="3"/>
+<text x="150" y="60" fill="#6b58ea" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2022</text>
+<text x="150" y="140" fill="#14243c" font-size="22" font-weight="800" text-anchor="middle">Full Stack</text>
+<text x="150" y="168" fill="#506684" font-size="16" text-anchor="middle">Stellion Tech · two ERP</text>
+<text x="150" y="190" fill="#506684" font-size="16" text-anchor="middle">systems, end to end</text>
+</g>
+<g class="s1">
+
+<circle cx="450" cy="92" r="8" fill="#ffffff" stroke="#6b58ea" stroke-width="3"/>
+<text x="450" y="60" fill="#6b58ea" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2023</text>
+<text x="450" y="140" fill="#14243c" font-size="22" font-weight="800" text-anchor="middle">Cloud &amp; Backend</text>
+<text x="450" y="168" fill="#506684" font-size="16" text-anchor="middle">Trade EC / TRD Global</text>
+<text x="450" y="190" fill="#506684" font-size="16" text-anchor="middle">APIs, integrations, data</text>
+</g>
+<g class="s2">
+
+<circle cx="750" cy="92" r="8" fill="#ffffff" stroke="#6b58ea" stroke-width="3"/>
+<text x="750" y="60" fill="#6b58ea" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2024</text>
+<text x="750" y="140" fill="#14243c" font-size="22" font-weight="800" text-anchor="middle">AI Engineering</text>
+<text x="750" y="168" fill="#506684" font-size="16" text-anchor="middle">Agents, document search,</text>
+<text x="750" y="190" fill="#506684" font-size="16" text-anchor="middle">OCR and voice in products</text>
+</g>
+<g class="s3">
+<circle class="ring" cx="1050" cy="92" r="11" fill="none" stroke="#0c9c84" stroke-width="2"/>
+<circle cx="1050" cy="92" r="10" fill="#0c9c84" stroke="#0c9c84" stroke-width="3"/>
+<text x="1050" y="60" fill="#0c9c84" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5" class="mono">2024 – NOW</text>
+<text x="1050" y="140" fill="#14243c" font-size="22" font-weight="800" text-anchor="middle">Lead AI Engineer</text>
+<text x="1050" y="168" fill="#506684" font-size="16" text-anchor="middle">Team lead · AI consulting</text>
+<text x="1050" y="190" fill="#506684" font-size="16" text-anchor="middle">AWS architecture</text>
+</g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="t d">
+<title id="t">whoami — an animated terminal</title><desc id="d">A terminal types out who Juandy is: Lead AI Engineer in Medellín, his engineering principles, Claude Code as his main tool, and that he is a goalkeeper and Linux tinkerer off the clock.</desc>
+<style>text{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:20px}
+.screen{animation:screen 14s infinite}
+@keyframes screen{0%,94.29%{opacity:1}98.57%,100%{opacity:0}}
+.blink{animation:blink 1.06s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.l0{animation:l0 14s infinite}@keyframes l0{0%,4.29%{opacity:0}4.36%,100%{opacity:1}}
+.c0{animation:c0 14s infinite}@keyframes c0{0%,4.29%{transform:translateX(0);animation-timing-function:steps(6,end)}6.43%,100%{transform:translateX(74.4px)}}
+.n0{animation:n0 14s infinite}@keyframes n0{0%,6.43%{opacity:0}6.50%,100%{opacity:1}}
+.e0{animation:e0 14s infinite}@keyframes e0{0%,6.43%{opacity:1}6.50%,100%{opacity:0}}
+.k0{animation:k0 14s infinite}@keyframes k0{0%,4.29%{opacity:0}4.36%,9.64%{opacity:1}9.71%,100%{opacity:0}}
+.l1{animation:l1 14s infinite}@keyframes l1{0%,9.64%{opacity:0}9.71%,100%{opacity:1}}
+.l2{animation:l2 14s infinite}@keyframes l2{0%,11.79%{opacity:0}11.86%,100%{opacity:1}}
+.c2{animation:c2 14s infinite}@keyframes c2{0%,11.79%{transform:translateX(0);animation-timing-function:steps(18,end)}18.21%,100%{transform:translateX(223.2px)}}
+.n2{animation:n2 14s infinite}@keyframes n2{0%,18.21%{opacity:0}18.29%,100%{opacity:1}}
+.e2{animation:e2 14s infinite}@keyframes e2{0%,18.21%{opacity:1}18.29%,100%{opacity:0}}
+.k2{animation:k2 14s infinite}@keyframes k2{0%,11.79%{opacity:0}11.86%,21.43%{opacity:1}21.50%,100%{opacity:0}}
+.l3{animation:l3 14s infinite}@keyframes l3{0%,21.43%{opacity:0}21.50%,100%{opacity:1}}
+.l4{animation:l4 14s infinite}@keyframes l4{0%,23.57%{opacity:0}23.64%,100%{opacity:1}}
+.l5{animation:l5 14s infinite}@keyframes l5{0%,25.71%{opacity:0}25.79%,100%{opacity:1}}
+.l6{animation:l6 14s infinite}@keyframes l6{0%,27.86%{opacity:0}27.93%,100%{opacity:1}}
+.c6{animation:c6 14s infinite}@keyframes c6{0%,27.86%{transform:translateX(0);animation-timing-function:steps(42,end)}42.86%,100%{transform:translateX(520.8px)}}
+.n6{animation:n6 14s infinite}@keyframes n6{0%,42.86%{opacity:0}42.93%,100%{opacity:1}}
+.e6{animation:e6 14s infinite}@keyframes e6{0%,42.86%{opacity:1}42.93%,100%{opacity:0}}
+.k6{animation:k6 14s infinite}@keyframes k6{0%,27.86%{opacity:0}27.93%,46.07%{opacity:1}46.14%,100%{opacity:0}}
+.l7{animation:l7 14s infinite}@keyframes l7{0%,46.07%{opacity:0}46.14%,100%{opacity:1}}
+.l8{animation:l8 14s infinite}@keyframes l8{0%,48.21%{opacity:0}48.29%,100%{opacity:1}}
+.c8{animation:c8 14s infinite}@keyframes c8{0%,48.21%{transform:translateX(0);animation-timing-function:steps(22,end)}56.07%,100%{transform:translateX(272.8px)}}
+.n8{animation:n8 14s infinite}@keyframes n8{0%,56.07%{opacity:0}56.14%,100%{opacity:1}}
+.e8{animation:e8 14s infinite}@keyframes e8{0%,56.07%{opacity:1}56.14%,100%{opacity:0}}
+.k8{animation:k8 14s infinite}@keyframes k8{0%,48.21%{opacity:0}48.29%,59.29%{opacity:1}59.36%,100%{opacity:0}}
+.l9{animation:l9 14s infinite}@keyframes l9{0%,59.29%{opacity:0}59.36%,100%{opacity:1}}
+.lf{animation:lf 14s infinite}@keyframes lf{0%,61.43%{opacity:0}61.50%,100%{opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.cover{display:none}}</style>
+<defs><clipPath id="clip"><rect width="1200" height="460" rx="16"/></clipPath></defs>
+<g clip-path="url(#clip)">
+<rect width="1200" height="460" fill="#0d1424"/>
+<rect width="1200" height="44" fill="#151f35"/>
+<path d="M0 44H1200" stroke="#283653"/>
+<circle cx="28" cy="22" r="7" fill="#ff6b7a"/><circle cx="52" cy="22" r="7" fill="#ffc861"/><circle cx="76" cy="22" r="7" fill="#5be08f"/>
+<text x="600" y="27.5" fill="#8fa2c4" font-size="14" text-anchor="middle">juandy@medellin: ~</text>
+<g class="screen">
+<g class="l0">
+<text x="44" y="96" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">whoami</tspan></text>
+<g class="c0 cover"><rect x="68.8" y="77" width="86.8" class="e0" height="29" fill="#0d1424"/><rect class="k0 caret" x="68.8" y="79" width="6.8" height="22" fill="#48dbc0"/></g>
+</g>
+<text class="l1" x="44" y="129" xml:space="preserve"><tspan fill="#f3f7ff">juandy</tspan><tspan fill="#8fa2c4"> — Lead AI Engineer · Medellín, Colombia · </tspan><tspan fill="#48dbc0">6.24°N 75.58°W</tspan></text>
+<g class="l2">
+<text x="44" y="162" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">cat principles.txt</tspan></text>
+<g class="c2 cover"><rect x="68.8" y="143" width="235.6" class="e2" height="29" fill="#0d1424"/><rect class="k2 caret" x="68.8" y="145" width="6.8" height="22" fill="#48dbc0"/></g>
+</g>
+<text class="l3" x="44" y="195" xml:space="preserve"><tspan fill="#9586fa">→ </tspan><tspan fill="#8fa2c4">architecture before implementation</tspan></text>
+<text class="l4" x="44" y="228" xml:space="preserve"><tspan fill="#9586fa">→ </tspan><tspan fill="#8fa2c4">every AI feature ships with a latency, cost &amp; failure budget</tspan></text>
+<text class="l5" x="44" y="261" xml:space="preserve"><tspan fill="#9586fa">→ </tspan><tspan fill="#8fa2c4">production-grade from the first commit</tspan></text>
+<g class="l6">
+<text x="44" y="294" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">claude "review this agent before it ships"</tspan><tspan class="n6" fill="#4d5e7f">  # every PR still gets human eyes</tspan></text>
+<g class="c6 cover"><rect x="68.8" y="275" width="533.2" class="e6" height="29" fill="#0d1424"/><rect class="k6 caret" x="68.8" y="277" width="6.8" height="22" fill="#48dbc0"/></g>
+</g>
+<text class="l7" x="44" y="327" xml:space="preserve"><tspan fill="#5be08f">✓ </tspan><tspan fill="#8fa2c4">3 suggestions · 0 surprises in prod </tspan><tspan fill="#4d5e7f">(that’s the goal, anyway)</tspan></text>
+<g class="l8">
+<text x="44" y="360" xml:space="preserve"><tspan fill="#9586fa">$ </tspan><tspan fill="#f3f7ff">uptime --off-the-clock</tspan></text>
+<g class="c8 cover"><rect x="68.8" y="341" width="285.2" class="e8" height="29" fill="#0d1424"/><rect class="k8 caret" x="68.8" y="343" width="6.8" height="22" fill="#48dbc0"/></g>
+</g>
+<text class="l9" x="44" y="393" xml:space="preserve"><tspan fill="#ffc861">goalkeeper</tspan><tspan fill="#8fa2c4"> (yes, I dive) · </tspan><tspan fill="#48dbc0">linux tinkerer</tspan><tspan fill="#8fa2c4"> · automation experiments</tspan></text>
+<g class="lf"><text x="44" y="426"><tspan fill="#9586fa">$ </tspan></text><rect class="blink" x="68.8" y="409" width="6.8" height="22" fill="#48dbc0"/></g>
+</g>
+<rect x=".75" y=".75" width="1198.5" height="458.5" rx="15.5" fill="none" stroke="#283653" stroke-width="1.5"/>
+</g>
+</svg>

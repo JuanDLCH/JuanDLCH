@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-labelledby="t d">
+<title id="t">Chat Lab — watch the agent think</title><desc id="d">Card linking to a live multimodal chat demo; agent steps tick off one by one: read a file, call a tool, draft a cited answer.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.live{transform-box:fill-box;transform-origin:center;animation:live 1.6s ease-in-out infinite}
+@keyframes live{50%{opacity:.25;transform:scale(.7)}}
+.sp0{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite,sp0 7s infinite}
+@keyframes sp0{0%,5.71%{opacity:0}5.86%,20.00%{opacity:1}20.14%,100%{opacity:0}}
+.ok0{animation:ok0 7s infinite}@keyframes ok0{0%,20.00%{opacity:0}22.14%,92.86%{opacity:1}97.14%,100%{opacity:0}}
+.row0{animation:row0 7s infinite}@keyframes row0{0%,5.71%{opacity:.25}8.57%,92.86%{opacity:1}97.14%,100%{opacity:.25}}
+.sp1{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite,sp1 7s infinite}
+@keyframes sp1{0%,22.86%{opacity:0}23.00%,37.14%{opacity:1}37.29%,100%{opacity:0}}
+.ok1{animation:ok1 7s infinite}@keyframes ok1{0%,37.14%{opacity:0}39.29%,92.86%{opacity:1}97.14%,100%{opacity:0}}
+.row1{animation:row1 7s infinite}@keyframes row1{0%,22.86%{opacity:.25}25.71%,92.86%{opacity:1}97.14%,100%{opacity:.25}}
+.sp2{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite,sp2 7s infinite}
+@keyframes sp2{0%,40.00%{opacity:0}40.14%,54.29%{opacity:1}54.43%,100%{opacity:0}}
+.ok2{animation:ok2 7s infinite}@keyframes ok2{0%,54.29%{opacity:0}56.43%,92.86%{opacity:1}97.14%,100%{opacity:0}}
+.row2{animation:row2 7s infinite}@keyframes row2{0%,40.00%{opacity:.25}42.86%,92.86%{opacity:1}97.14%,100%{opacity:.25}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.cover{display:none}}</style>
+<defs>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9586fa"/><stop offset=".55" stop-color="#b38df8"/><stop offset="1" stop-color="#48dbc0"/></linearGradient>
+<clipPath id="clip"><rect width="600" height="340" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="600" height="340" fill="#111b31"/>
+<rect width="600" height="4" fill="url(#accent)"/>
+<text x="36" y="52" fill="#48dbc0" font-size="13" font-weight="800" letter-spacing="2">CHAT LAB</text>
+<g><rect x="422" y="33" width="142" height="26" rx="13" fill="none" stroke="#314160"/>
+<circle class="live" cx="438" cy="46" r="4.5" fill="#48dbc0"/>
+<text x="449" y="50.5" fill="#8fa2c4" font-size="12" font-weight="800" letter-spacing="1.5">MULTIMODAL</text></g>
+<text x="34" y="102" fill="#f3f7ff" font-size="36" font-weight="800" letter-spacing="-1">Watch the agent think</text>
+<text x="36" y="136" fill="#8fa2c4" font-size="18">Text, images, docs and audio —</text>
+<text x="36" y="161" fill="#8fa2c4" font-size="18">every step shown live.</text>
+<g>
+<circle cx="46" cy="205" r="8" fill="none" stroke="#314160" stroke-width="2"/>
+<path class="sp0" d="M46 197a8 8 0 0 1 8 8" fill="none" stroke="#9586fa" stroke-width="2.5" stroke-linecap="round"/>
+<g class="ok0"><circle cx="46" cy="205" r="9" fill="#48dbc0"/><path d="M42 205l3 3 5.5-6" fill="none" stroke="#111b31" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text class="row0 mono" x="66" y="210" font-size="15" xml:space="preserve"><tspan fill="#9586fa" font-weight="700">read  </tspan><tspan fill="#f3f7ff">invoice.pdf → OCR</tspan></text>
+<text class="ok0 mono" x="564" y="210" font-size="13" fill="#4d5e7f" text-anchor="end">0.8s</text>
+</g>
+<g>
+<circle cx="46" cy="231" r="8" fill="none" stroke="#314160" stroke-width="2"/>
+<path class="sp1" d="M46 223a8 8 0 0 1 8 8" fill="none" stroke="#9586fa" stroke-width="2.5" stroke-linecap="round"/>
+<g class="ok1"><circle cx="46" cy="231" r="9" fill="#48dbc0"/><path d="M42 231l3 3 5.5-6" fill="none" stroke="#111b31" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text class="row1 mono" x="66" y="236" font-size="15" xml:space="preserve"><tspan fill="#9586fa" font-weight="700">call  </tspan><tspan fill="#f3f7ff">search_docs("refund policy")</tspan></text>
+<text class="ok1 mono" x="564" y="236" font-size="13" fill="#4d5e7f" text-anchor="end">1.2s</text>
+</g>
+<g>
+<circle cx="46" cy="257" r="8" fill="none" stroke="#314160" stroke-width="2"/>
+<path class="sp2" d="M46 249a8 8 0 0 1 8 8" fill="none" stroke="#9586fa" stroke-width="2.5" stroke-linecap="round"/>
+<g class="ok2"><circle cx="46" cy="257" r="9" fill="#48dbc0"/><path d="M42 257l3 3 5.5-6" fill="none" stroke="#111b31" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text class="row2 mono" x="66" y="262" font-size="15" xml:space="preserve"><tspan fill="#9586fa" font-weight="700">draft </tspan><tspan fill="#f3f7ff">answer + cite 2 sources</tspan></text>
+<text class="ok2 mono" x="564" y="262" font-size="13" fill="#4d5e7f" text-anchor="end">0.6s</text>
+</g>
+<g><rect x="36" y="290" width="257.6" height="32" rx="16" fill="#9586fa"/>
+<path d="M54 299.5l9 6.5-9 6.5z" fill="#111b31"/>
+<text x="72" y="311" fill="#111b31" font-size="15" font-weight="800" class="mono">juandlch.dev/lab/chat</text></g>
+<rect x=".75" y=".75" width="598.5" height="338.5" rx="17.5" fill="none" stroke="#314160" stroke-width="1.5"/>
+</g>
+</svg>

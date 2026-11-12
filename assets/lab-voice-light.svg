@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-labelledby="t d">
+<title id="t">Voice Lab — talk to Sophie</title><desc id="d">Card linking to a live realtime voice agent demo; an animated waveform and a typed caption.</desc>
+<style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
+.live{transform-box:fill-box;transform-origin:center;animation:live 1.6s ease-in-out infinite}
+@keyframes live{50%{opacity:.25;transform:scale(.7)}}
+.vb{fill:url(#accent);transform-box:fill-box;transform-origin:center;animation:vb 1.2s ease-in-out infinite}
+@keyframes vb{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
+.cap{animation:cap 8s infinite}
+@keyframes cap{0%,7.50%{transform:translateX(0);animation-timing-function:steps(44,end)}37.75%,92.50%{transform:translateX(400.0px)}92.63%,100%{transform:translateX(0)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}.cover{display:none}}</style>
+<defs>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6b58ea"/><stop offset=".55" stop-color="#8f5ee8"/><stop offset="1" stop-color="#0c9c84"/></linearGradient>
+<clipPath id="clip"><rect width="600" height="340" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="600" height="340" fill="#ffffff"/>
+<rect width="600" height="4" fill="url(#accent)"/>
+<text x="36" y="52" fill="#0c9c84" font-size="13" font-weight="800" letter-spacing="2">VOICE LAB</text>
+<g><rect x="485.6" y="33" width="78.4" height="26" rx="13" fill="none" stroke="#b8cae4"/>
+<circle class="live" cx="501.6" cy="46" r="4.5" fill="#e5485c"/>
+<text x="512.6" y="50.5" fill="#506684" font-size="12" font-weight="800" letter-spacing="1.5">LIVE</text></g>
+<text x="34" y="102" fill="#14243c" font-size="36" font-weight="800" letter-spacing="-1">Talk to Sophie</text>
+<text x="36" y="136" fill="#506684" font-size="18">A realtime voice agent that knows my work.</text>
+<text x="36" y="161" fill="#506684" font-size="18">Interrupt her mid-sentence — she’ll stop.</text>
+<rect class="vb" style="animation-delay:-0.00s" x="38" y="217" width="8" height="10" rx="4"/><rect class="vb" style="animation-delay:-0.20s" x="53.6" y="214.5" width="8" height="15" rx="4"/><rect class="vb" style="animation-delay:-0.40s" x="69.2" y="213.5" width="8" height="17" rx="4"/><rect class="vb" style="animation-delay:-0.60s" x="84.8" y="209.5" width="8" height="25" rx="4"/><rect class="vb" style="animation-delay:-0.80s" x="100.4" y="209" width="8" height="26" rx="4"/><rect class="vb" style="animation-delay:-1.00s" x="116" y="209" width="8" height="26" rx="4"/><rect class="vb" style="animation-delay:-1.20s" x="131.6" y="204" width="8" height="36" rx="4"/><rect class="vb" style="animation-delay:-0.21s" x="147.2" y="204.5" width="8" height="35" rx="4"/><rect class="vb" style="animation-delay:-0.41s" x="162.8" y="198.5" width="8" height="47" rx="4"/><rect class="vb" style="animation-delay:-0.61s" x="178.4" y="200" width="8" height="44" rx="4"/><rect class="vb" style="animation-delay:-0.81s" x="194" y="202.5" width="8" height="39" rx="4"/><rect class="vb" style="animation-delay:-1.01s" x="209.6" y="195.5" width="8" height="53" rx="4"/><rect class="vb" style="animation-delay:-1.21s" x="225.2" y="198.5" width="8" height="47" rx="4"/><rect class="vb" style="animation-delay:-1.41s" x="240.79999999999998" y="191" width="8" height="62" rx="4"/><rect class="vb" style="animation-delay:-0.42s" x="256.4" y="194.5" width="8" height="55" rx="4"/><rect class="vb" style="animation-delay:-0.62s" x="272" y="198.5" width="8" height="47" rx="4"/><rect class="vb" style="animation-delay:-0.82s" x="287.6" y="191.5" width="8" height="61" rx="4"/><rect class="vb" style="animation-delay:-1.02s" x="303.2" y="196" width="8" height="52" rx="4"/><rect class="vb" style="animation-delay:-1.22s" x="318.8" y="189.5" width="8" height="65" rx="4"/><rect class="vb" style="animation-delay:-1.42s" x="334.4" y="194" width="8" height="56" rx="4"/><rect class="vb" style="animation-delay:-1.62s" x="350" y="199" width="8" height="46" rx="4"/><rect class="vb" style="animation-delay:-0.63s" x="365.59999999999997" y="193.5" width="8" height="57" rx="4"/><rect class="vb" style="animation-delay:-0.83s" x="381.2" y="198.5" width="8" height="47" rx="4"/><rect class="vb" style="animation-delay:-1.03s" x="396.8" y="203" width="8" height="38" rx="4"/><rect class="vb" style="animation-delay:-1.23s" x="412.4" y="199" width="8" height="46" rx="4"/><rect class="vb" style="animation-delay:-1.43s" x="428" y="203.5" width="8" height="37" rx="4"/><rect class="vb" style="animation-delay:-1.63s" x="443.59999999999997" y="200.5" width="8" height="43" rx="4"/><rect class="vb" style="animation-delay:-1.83s" x="459.2" y="205" width="8" height="34" rx="4"/><rect class="vb" style="animation-delay:-0.84s" x="474.8" y="209" width="8" height="26" rx="4"/><rect class="vb" style="animation-delay:-1.04s" x="490.4" y="208" width="8" height="28" rx="4"/><rect class="vb" style="animation-delay:-1.24s" x="506" y="211.5" width="8" height="21" rx="4"/><rect class="vb" style="animation-delay:-1.44s" x="521.5999999999999" y="212" width="8" height="20" rx="4"/><rect class="vb" style="animation-delay:-1.64s" x="537.2" y="215" width="8" height="14" rx="4"/><rect class="vb" style="animation-delay:-1.84s" x="552.8" y="217" width="8" height="10" rx="4"/>
+<text x="38" y="275" fill="#14243c" font-size="15" class="mono">“So, what did Juandy build for drive-thrus?”</text>
+<rect class="cap cover" x="38" y="260" width="426" height="22" fill="#ffffff"/>
+<g><rect x="36" y="290" width="267.2" height="32" rx="16" fill="#6b58ea"/>
+<path d="M54 299.5l9 6.5-9 6.5z" fill="#ffffff"/>
+<text x="72" y="311" fill="#ffffff" font-size="15" font-weight="800" class="mono">juandlch.dev/lab/voice</text></g>
+<rect x=".75" y=".75" width="598.5" height="338.5" rx="17.5" fill="none" stroke="#b8cae4" stroke-width="1.5"/>
+</g>
+</svg>
