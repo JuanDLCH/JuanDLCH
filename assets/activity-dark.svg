@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
-<title id="t">599 GitHub contributions in the last 12 months</title><desc id="d">599 contributions in the last year (492 in private repos), 31 active days, a 6-day best streak. Heatmap of the last 30 weeks. Recently pushed public repos: dotfiles, hyde-quickshell-customizations.</desc>
+<title id="t">600 GitHub contributions in the last 12 months</title><desc id="d">600 contributions in the last year (492 in private repos), 31 active days, a 6-day best streak. Heatmap of the last 30 weeks. Recently pushed public repos: dotfiles, hyde-quickshell-customizations.</desc>
 <style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
 .cell{animation:cell .45s ease-out both}
 @keyframes cell{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
@@ -16,12 +16,12 @@
 <rect width="1200" height="330" fill="url(#bg)"/>
 <rect x="1" y="1" width="1198" height="328" rx="17" stroke="#283653" stroke-width="2" fill="none"/>
 <text x="44" y="54" fill="#48dbc0" font-size="13" font-weight="800" letter-spacing="2">ACTIVITY · LAST 12 MONTHS</text>
-<text x="40" y="128" fill="url(#accent)" font-size="76" font-weight="800" letter-spacing="-3">599</text>
+<text x="40" y="128" fill="url(#accent)" font-size="76" font-weight="800" letter-spacing="-3">600</text>
 <text x="44" y="160" fill="#f3f7ff" font-size="21" font-weight="700">contributions</text>
 <text x="44" y="186" fill="#8fa2c4" font-size="15">492 in private repos, where the client work lives.</text>
 <g><text x="44" y="232" fill="#f3f7ff" font-size="26" font-weight="800">31</text><text x="44" y="252" fill="#8fa2c4" font-size="12.5">active days</text></g>
 <g><text x="196" y="232" fill="#f3f7ff" font-size="26" font-weight="800">6</text><text x="196" y="252" fill="#8fa2c4" font-size="12.5">day best streak</text></g>
-<g><text x="348" y="232" fill="#f3f7ff" font-size="26" font-weight="800">89</text><text x="348" y="252" fill="#8fa2c4" font-size="12.5">on the busiest day</text></g>
+<g><text x="348" y="232" fill="#f3f7ff" font-size="26" font-weight="800">88</text><text x="348" y="252" fill="#8fa2c4" font-size="12.5">on the busiest day</text></g>
 <text x="524" y="62" fill="#4d5e7f" font-size="12" class="mono">Apr</text>
 <text x="650" y="62" fill="#4d5e7f" font-size="12" class="mono">Jun</text>
 <text x="734" y="62" fill="#4d5e7f" font-size="12" class="mono">Jul</text>
@@ -222,8 +222,8 @@
 <rect class="cell" style="animation-delay:0.955s" x="1091" y="95" width="17" height="17" rx="4" fill="#b38df8" fill-opacity="1"><title>2026-10-26: 17</title></rect>
 <rect class="cell" style="animation-delay:0.965s" x="1091" y="116" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-10-27: 0</title></rect>
 <rect class="cell" style="animation-delay:0.975s" x="1091" y="137" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-10-28: 0</title></rect>
-<rect class="cell" style="animation-delay:0.985s" x="1091" y="158" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-10-29: 89</title></rect>
-<rect class="cell" style="animation-delay:0.995s" x="1091" y="179" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-10-30: 51</title></rect>
+<rect class="cell" style="animation-delay:0.985s" x="1091" y="158" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-10-29: 88</title></rect>
+<rect class="cell" style="animation-delay:0.995s" x="1091" y="179" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-10-30: 52</title></rect>
 <rect class="cell" style="animation-delay:1.005s" x="1091" y="200" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-10-31: 45</title></rect>
 <rect class="cell" style="animation-delay:0.980s" x="1112" y="74" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-11-01: 35</title></rect>
 <rect class="cell" style="animation-delay:0.990s" x="1112" y="95" width="17" height="17" rx="4" fill="#48dbc0" fill-opacity="1"><title>2026-11-02: 45</title></rect>
@@ -235,8 +235,9 @@
 <rect class="cell" style="animation-delay:1.015s" x="1133" y="74" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-08: 0</title></rect>
 <rect class="cell" style="animation-delay:1.025s" x="1133" y="95" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-09: 0</title></rect>
 <rect class="cell" style="animation-delay:1.035s" x="1133" y="116" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-10: 0</title></rect>
-<rect class="cell" style="animation-delay:1.045s" x="1133" y="137" width="17" height="17" rx="4" fill="#b38df8" fill-opacity="1"><title>2026-11-11: 18</title></rect>
-<rect class="today" x="1133" y="137" width="17" height="17" rx="4" fill="none" stroke="#48dbc0" stroke-width="2"/>
+<rect class="cell" style="animation-delay:1.045s" x="1133" y="137" width="17" height="17" rx="4" fill="#b38df8" fill-opacity="1"><title>2026-11-11: 19</title></rect>
+<rect class="cell" style="animation-delay:1.055s" x="1133" y="158" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-12: 0</title></rect>
+<rect class="today" x="1133" y="158" width="17" height="17" rx="4" fill="none" stroke="#48dbc0" stroke-width="2"/>
 <text x="998" y="235" fill="#4d5e7f" font-size="12" text-anchor="end">less</text>
 <rect x="1004" y="223" width="14" height="14" rx="3.5" fill="#111b31" stroke="#283653"/><rect x="1026" y="223" width="14" height="14" rx="3.5" fill="#9586fa" fill-opacity="0.35"/><rect x="1048" y="223" width="14" height="14" rx="3.5" fill="#9586fa" fill-opacity="0.7"/><rect x="1070" y="223" width="14" height="14" rx="3.5" fill="#b38df8" fill-opacity="1"/><rect x="1092" y="223" width="14" height="14" rx="3.5" fill="#48dbc0" fill-opacity="1"/>
 <text x="1150" y="235" fill="#4d5e7f" font-size="12" text-anchor="end">more</text>
