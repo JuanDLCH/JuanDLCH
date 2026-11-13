@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
-<title id="t">612 GitHub contributions in the last 12 months</title><desc id="d">612 contributions in the last year (504 in private repos), 32 active days, a 6-day best streak. Heatmap of the last 30 weeks. Recently pushed public repos: dotfiles, hyde-quickshell-customizations.</desc>
+<title id="t">614 GitHub contributions in the last 12 months</title><desc id="d">614 contributions in the last year (504 in private repos), 32 active days, a 6-day best streak. Heatmap of the last 30 weeks. Recently pushed public repos: dotfiles, hyde-quickshell-customizations.</desc>
 <style>text{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,'DejaVu Sans Mono',monospace}
 .cell{animation:cell .45s ease-out both}
 @keyframes cell{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
@@ -16,7 +16,7 @@
 <rect width="1200" height="330" fill="url(#bg)"/>
 <rect x="1" y="1" width="1198" height="328" rx="17" stroke="#283653" stroke-width="2" fill="none"/>
 <text x="44" y="54" fill="#48dbc0" font-size="13" font-weight="800" letter-spacing="2">ACTIVITY · LAST 12 MONTHS</text>
-<text x="40" y="128" fill="url(#accent)" font-size="76" font-weight="800" letter-spacing="-3">612</text>
+<text x="40" y="128" fill="url(#accent)" font-size="76" font-weight="800" letter-spacing="-3">614</text>
 <text x="44" y="160" fill="#f3f7ff" font-size="21" font-weight="700">contributions</text>
 <text x="44" y="186" fill="#8fa2c4" font-size="15">504 in private repos, where the client work lives.</text>
 <g><text x="44" y="232" fill="#f3f7ff" font-size="26" font-weight="800">32</text><text x="44" y="252" fill="#8fa2c4" font-size="12.5">active days</text></g>
@@ -236,19 +236,20 @@
 <rect class="cell" style="animation-delay:1.025s" x="1133" y="95" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-09: 0</title></rect>
 <rect class="cell" style="animation-delay:1.035s" x="1133" y="116" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-10: 0</title></rect>
 <rect class="cell" style="animation-delay:1.045s" x="1133" y="137" width="17" height="17" rx="4" fill="#b38df8" fill-opacity="1"><title>2026-11-11: 24</title></rect>
-<rect class="cell" style="animation-delay:1.055s" x="1133" y="158" width="17" height="17" rx="4" fill="#9586fa" fill-opacity="0.7"><title>2026-11-12: 7</title></rect>
-<rect class="today" x="1133" y="158" width="17" height="17" rx="4" fill="none" stroke="#48dbc0" stroke-width="2"/>
+<rect class="cell" style="animation-delay:1.055s" x="1133" y="158" width="17" height="17" rx="4" fill="#9586fa" fill-opacity="0.7"><title>2026-11-12: 9</title></rect>
+<rect class="cell" style="animation-delay:1.065s" x="1133" y="179" width="17" height="17" rx="4" fill="#111b31" stroke="#283653"><title>2026-11-13: 0</title></rect>
+<rect class="today" x="1133" y="179" width="17" height="17" rx="4" fill="none" stroke="#48dbc0" stroke-width="2"/>
 <text x="998" y="235" fill="#4d5e7f" font-size="12" text-anchor="end">less</text>
 <rect x="1004" y="223" width="14" height="14" rx="3.5" fill="#111b31" stroke="#283653"/><rect x="1026" y="223" width="14" height="14" rx="3.5" fill="#9586fa" fill-opacity="0.35"/><rect x="1048" y="223" width="14" height="14" rx="3.5" fill="#9586fa" fill-opacity="0.7"/><rect x="1070" y="223" width="14" height="14" rx="3.5" fill="#b38df8" fill-opacity="1"/><rect x="1092" y="223" width="14" height="14" rx="3.5" fill="#48dbc0" fill-opacity="1"/>
 <text x="1150" y="235" fill="#4d5e7f" font-size="12" text-anchor="end">more</text>
 <path d="M40 258H1160" stroke="#283653" stroke-width="1.5" opacity="0"/>
 <text x="44" y="296" fill="#8fa2c4" font-size="12" font-weight="800" letter-spacing="1.8">RECENTLY PUSHED (PUBLIC)</text>
-<g><rect x="300" y="276" width="234" height="30" rx="15" fill="#111b31" stroke="#314160"/>
+<g><rect x="300" y="276" width="243" height="30" rx="15" fill="#111b31" stroke="#314160"/>
 <circle cx="317" cy="291" r="5" fill="#89e051"/>
-<text x="330" y="296" font-size="13.5" class="mono" xml:space="preserve"><tspan fill="#f3f7ff">dotfiles</tspan><tspan fill="#8fa2c4"> · Shell · Nov 3</tspan></text></g>
-<g><rect x="546.4" y="276" width="396" height="30" rx="15" fill="#111b31" stroke="#314160"/>
-<circle cx="563.4" cy="291" r="5" fill="#44a51c"/>
-<text x="576.4" y="296" font-size="13.5" class="mono" xml:space="preserve"><tspan fill="#f3f7ff">hyde-quickshell-customizations</tspan><tspan fill="#8fa2c4"> · QML · Nov 3</tspan></text></g>
-<text x="1160" y="316" fill="#4d5e7f" font-size="10.5" text-anchor="end" class="mono">updated Nov 12</text>
+<text x="330" y="296" font-size="13.5" class="mono" xml:space="preserve"><tspan fill="#f3f7ff">dotfiles</tspan><tspan fill="#8fa2c4"> · Shell · Nov 12</tspan></text></g>
+<g><rect x="554.5" y="276" width="396" height="30" rx="15" fill="#111b31" stroke="#314160"/>
+<circle cx="571.5" cy="291" r="5" fill="#44a51c"/>
+<text x="584.5" y="296" font-size="13.5" class="mono" xml:space="preserve"><tspan fill="#f3f7ff">hyde-quickshell-customizations</tspan><tspan fill="#8fa2c4"> · QML · Nov 3</tspan></text></g>
+<text x="1160" y="316" fill="#4d5e7f" font-size="10.5" text-anchor="end" class="mono">updated Nov 13</text>
 </g>
 </svg>
