@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-20",
+ "generatedAt": "2026-11-21",
  "total": 760,
  "private": 506,
  "streak": {
-  "current": 2,
+  "current": 0,
   "longest": 6
  },
  "days": [
@@ -1485,6 +1485,10 @@
   },
   {
    "date": "2026-11-20",
+   "n": 0
+  },
+  {
+   "date": "2026-11-21",
    "n": 0
   }
  ],
