@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-24",
- "total": 769,
- "private": 548,
+ "generatedAt": "2026-11-25",
+ "total": 772,
+ "private": 334,
  "streak": {
-  "current": 1,
+  "current": 2,
   "longest": 6
  },
  "days": [
@@ -1473,10 +1473,21 @@
   },
   {
    "date": "2026-11-24",
+   "n": 3
+  },
+  {
+   "date": "2026-11-25",
    "n": 0
   }
  ],
  "recent": [
+  {
+   "name": "juandlch-portfolio",
+   "language": "TypeScript",
+   "color": "#3178c6",
+   "pushedAt": "2026-11-24T21:09:49Z",
+   "stars": 0
+  },
   {
    "name": "dotfiles",
    "language": "Shell",
@@ -1489,13 +1500,6 @@
    "language": "QML",
    "color": "#44a51c",
    "pushedAt": "2026-11-03T00:27:10Z",
-   "stars": 0
-  },
-  {
-   "name": "dracula-theme-mod-oh-my-posh",
-   "language": null,
-   "color": null,
-   "pushedAt": "2024-06-13T21:51:31Z",
    "stars": 0
   }
  ]
